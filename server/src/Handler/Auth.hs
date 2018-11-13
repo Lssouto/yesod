@@ -17,3 +17,8 @@ postAuthR = do
             sendStatusJSON ok200 (object ["status" .= True])
         Nothing -> do 
             sendStatusJSON ok200 (object ["status" .= False])
+            
+optionsAuthR :: Handler TypedContent
+optionsAuthR = do 
+    addHeader "Access-Control-Allow-Origin" "*"
+    sendStatusJSON ok200 (object ["status" .= True])

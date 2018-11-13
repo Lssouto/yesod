@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: ef56b9b9ed64478230001594a353ae6a8528aed450a9fab3161bce84d7f774a9
+-- hash: 90d8c9a7449ef6acccc5d67cd784a36abb4c393389c5d696ec674fd402540d9f
 
 name:           aulahaskell
 version:        0.0.0
@@ -30,6 +30,7 @@ library
       Handler.Home
       Import
       Import.NoFoundation
+      Middlewares
       Model
       Settings
       Settings.StaticFiles

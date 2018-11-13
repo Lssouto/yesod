@@ -2,7 +2,7 @@ import store from '../store/store'
 import VM from '@/main.js'
 
 const config = {
-    ApiUrl : 'http://' + window.location.hostname + ':8081' + '/api',
+    ApiUrl : 'http://' + window.location.hostname + '',
     errorHandler(message){
         VM.$swal({
             type: 'error',
