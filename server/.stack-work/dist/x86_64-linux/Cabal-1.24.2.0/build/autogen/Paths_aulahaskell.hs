@@ -30,7 +30,7 @@ version = Version [0,0,0] []
 bindir, libdir, dynlibdir, datadir, libexecdir, sysconfdir :: FilePath
 
 bindir     = "/home/ubuntu/workspace/server/.stack-work/install/x86_64-linux/lts-9.8/8.0.2/bin"
-libdir     = "/home/ubuntu/workspace/server/.stack-work/install/x86_64-linux/lts-9.8/8.0.2/lib/x86_64-linux-ghc-8.0.2/aulahaskell-0.0.0-LoUslvgBjWU1RbrXO1tmnM"
+libdir     = "/home/ubuntu/workspace/server/.stack-work/install/x86_64-linux/lts-9.8/8.0.2/lib/x86_64-linux-ghc-8.0.2/aulahaskell-0.0.0-AWZ1CnvuhDVQWRcAfTYgh"
 dynlibdir  = "/home/ubuntu/workspace/server/.stack-work/install/x86_64-linux/lts-9.8/8.0.2/lib/x86_64-linux-ghc-8.0.2"
 datadir    = "/home/ubuntu/workspace/server/.stack-work/install/x86_64-linux/lts-9.8/8.0.2/share/x86_64-linux-ghc-8.0.2/aulahaskell-0.0.0"
 libexecdir = "/home/ubuntu/workspace/server/.stack-work/install/x86_64-linux/lts-9.8/8.0.2/libexec"

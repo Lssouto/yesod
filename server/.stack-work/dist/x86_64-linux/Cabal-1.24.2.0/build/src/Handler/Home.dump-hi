@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2018-11-13 10:52:39.194235 UTC
+2018-11-13 11:40:10.984363 UTC
 
-interface aulahaskell-0.0.0-LoUslvgBjWU1RbrXO1tmnM:Handler.Home 8002
-  interface hash: 0e43c13a7c6f8bbe4b2a7bce3bdcc49d
-  ABI hash: 9fea1fa68b519e1e5680b3ea69a9f851
-  export-list hash: 764eac6fb4890b07f13883720e719da8
+interface aulahaskell-0.0.0-AWZ1CnvuhDVQWRcAfTYgh:Handler.Home 8002
+  interface hash: db8d758e1d6ae11afaf339e098e453f3
+  ABI hash: 0d5c97d07ff7e955f11edca75ea0a9e2
+  export-list hash: 998dda4eb1c6e0808939c57ee85f35e3
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 6d73493edc0c8da032de4b3f8604d846
   sig of: Nothing
@@ -191,7 +191,6 @@ package dependencies: ReadArgs-1.2.3@ReadArgs-1.2.3-FZlTw1cmwFABXd9Qu17GpK
                       xss-sanitize-0.3.5.7@xss-sanitize-0.3.5.7-2Pr735gWMIKE1KECS4SIv1
                       yaml-0.8.23.3@yaml-0.8.23.3-C6ya2ht5lnU5AAyP9utctL
                       yesod-1.4.5@yesod-1.4.5-GDhOBR6sYcs6xIyNy56Max
-                      yesod-auth-1.4.19@yesod-auth-1.4.19-Lis3qGCnpJgB8Xqabl9Sxo
                       yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V
                       yesod-form-1.4.16@yesod-form-1.4.16-FvSoVGpHA8r2nWU5Chx6PU
                       yesod-newsfeed-1.6@yesod-newsfeed-1.6-FVeGFThDxmyHNMY2ecmTrZ
@@ -230,10 +229,10 @@ orphans: attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE21oqFTQ:Data.Att
          vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Fusion.Bundle
          vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed
          vector-instances-3.4@vector-instances-3.4-6qKuR7R2wDjElztDeslDO1:Data.Vector.Instances
-         yesod-auth-1.4.19@yesod-auth-1.4.19-Lis3qGCnpJgB8Xqabl9Sxo:Yesod.Auth
 family instance modules: adjunctions-4.3@adjunctions-4.3-A5jfd1yrmaY4DRMJuiquBp:Data.Functor.Rep
                          attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE21oqFTQ:Data.Attoparsec.Internal.Types
-                         aulahaskell-0.0.0-LoUslvgBjWU1RbrXO1tmnM:Foundation
+                         aulahaskell-0.0.0-AWZ1CnvuhDVQWRcAfTYgh:Foundation
+                         aulahaskell-0.0.0-AWZ1CnvuhDVQWRcAfTYgh:Model
                          base-4.9.1.0:Control.Applicative base-4.9.1.0:Data.Complex
                          base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Compose
                          base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
@@ -332,37 +331,35 @@ family instance modules: adjunctions-4.3@adjunctions-4.3-A5jfd1yrmaY4DRMJuiquBp:
                          vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed.Base
                          vector-instances-3.4@vector-instances-3.4-6qKuR7R2wDjElztDeslDO1:Data.Vector.Instances
                          xml-types-0.3.6@xml-types-0.3.6-BlXpqWNn2ZGFM9gCBPuBeT:Data.XML.Types
-                         yesod-auth-1.4.19@yesod-auth-1.4.19-Lis3qGCnpJgB8Xqabl9Sxo:Yesod.Auth
-                         yesod-auth-1.4.19@yesod-auth-1.4.19-Lis3qGCnpJgB8Xqabl9Sxo:Yesod.Auth.Routes
                          yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Class.Handler
                          yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Internal.LiteApp
                          yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Types
                          yesod-static-1.5.3.1@yesod-static-1.5.3.1-3fPHfGwGXLD6UjosrxUpf7:Yesod.Static
                          zlib-0.6.1.2@zlib-0.6.1.2-7negTfm2ujt1gW4wr40MUp:Codec.Compression.Zlib.Stream
-import  -/  Foundation 97564882ab0294b940092a5a3d114123
-  Handler 98fc2ec1c50b399eb88793f53ce68c4d
-import  -/  Import ed0f71d62499abf66a9f23877019823e
-  exports: 49c4c10f14d13c8061fd287915e28ce3
+import  -/  Foundation 2e2a3f7ca77b94b39136a0d53a57d732
+  Handler 51d505028f6eeb168ad6504bb48683c8
+import  -/  Import a3409f9e00cd93c654ce74d13aa91608
+  exports: 16a7a241c1c03a17547eb83b22875034
 import  -/  blaze-html-0.9.0.1@blaze-html-0.9.0.1-GQ0yZtPYt2i2KdgnUEOA8p:Text.Blaze.Html 835f81951872bd48727588c57b8222c5
 import  -/  classy-prelude-1.2.0.1@classy-prelude-1.2.0.1-DI7QyZr6dYQLSGY5Zda29N:ClassyPrelude 3ba46d72eee6022c7e55d87d83c8d916
 import  -/  http-types-0.9.1@http-types-0.9.1-G7E1zHPzooHCYxKqGuQmxY:Network.HTTP.Types.Status 89141eb12608ef6ae13b4ca925571920
 import  -/  persistent-postgresql-2.6.1@persistent-postgresql-2.6.1-2dvMQeNrMidL0mEJqjlR9n:Database.Persist.Postgresql 10b056d5394430454ce529b83ca42db3
-458c216fa3f4407d334880142665c56d
+c2e0ba04dc7c4ca39f3daf3308d3d2ad
   $trModule :: GHC.Types.Module
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.Module
                    Handler.Home.$trModule2
                    Handler.Home.$trModule1) -}
-1ff224a3bbebd641e0c7076d4c5df4be
+dd7334851b988f30d189def3f95100f4
   $trModule1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS "Handler.Home"#) -}
-dbd454779608ff059085f7c9e5767a93
+6294696318b98611e704a522d15d3391
   $trModule2 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
-                   "aulahaskell-0.0.0-LoUslvgBjWU1RbrXO1tmnM"#) -}
-95991c715b6907e2d8ba620da2c06a60
+                   "aulahaskell-0.0.0-AWZ1CnvuhDVQWRcAfTYgh"#) -}
+e8a40408e2fb8bb3d8e0ac2b59922002
   getHomeR :: Foundation.Handler Text.Blaze.Html.Html
   {- Strictness: x -}
 vectorised variables:

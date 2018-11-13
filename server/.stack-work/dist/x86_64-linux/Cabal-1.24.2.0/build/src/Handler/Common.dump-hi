@@ -1,12 +1,12 @@
 
 ==================== FINAL INTERFACE ====================
-2018-11-13 10:52:39.087003 UTC
+2018-11-13 11:40:10.861404 UTC
 
-interface aulahaskell-0.0.0-LoUslvgBjWU1RbrXO1tmnM:Handler.Common 8002
-  interface hash: 613e89b66cf65aa2b2fefe63527e7ab0
-  ABI hash: 27f5ad1581fd7441a5135a3a19104834
-  export-list hash: 1524403190990b043137a56f05fa4851
-  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+interface aulahaskell-0.0.0-AWZ1CnvuhDVQWRcAfTYgh:Handler.Common 8002
+  interface hash: 4c8efc08fad0d6ee4704caae2c620799
+  ABI hash: 37c40626e1e74eea8696bd8778a651fa
+  export-list hash: 789cced7fd65a55a42bcff253de008e7
+  orphan hash: 392f338a1aa6843ee26ef4fb175e4f14
   flag hash: 6d73493edc0c8da032de4b3f8604d846
   sig of: Nothing
   used TH splices: True
@@ -192,7 +192,6 @@ package dependencies: ReadArgs-1.2.3@ReadArgs-1.2.3-FZlTw1cmwFABXd9Qu17GpK
                       xss-sanitize-0.3.5.7@xss-sanitize-0.3.5.7-2Pr735gWMIKE1KECS4SIv1
                       yaml-0.8.23.3@yaml-0.8.23.3-C6ya2ht5lnU5AAyP9utctL
                       yesod-1.4.5@yesod-1.4.5-GDhOBR6sYcs6xIyNy56Max
-                      yesod-auth-1.4.19@yesod-auth-1.4.19-Lis3qGCnpJgB8Xqabl9Sxo
                       yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V
                       yesod-form-1.4.16@yesod-form-1.4.16-FvSoVGpHA8r2nWU5Chx6PU
                       yesod-newsfeed-1.6@yesod-newsfeed-1.6-FVeGFThDxmyHNMY2ecmTrZ
@@ -231,10 +230,10 @@ orphans: attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE21oqFTQ:Data.Att
          vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Fusion.Bundle
          vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed
          vector-instances-3.4@vector-instances-3.4-6qKuR7R2wDjElztDeslDO1:Data.Vector.Instances
-         yesod-auth-1.4.19@yesod-auth-1.4.19-Lis3qGCnpJgB8Xqabl9Sxo:Yesod.Auth
 family instance modules: adjunctions-4.3@adjunctions-4.3-A5jfd1yrmaY4DRMJuiquBp:Data.Functor.Rep
                          attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE21oqFTQ:Data.Attoparsec.Internal.Types
-                         aulahaskell-0.0.0-LoUslvgBjWU1RbrXO1tmnM:Foundation
+                         aulahaskell-0.0.0-AWZ1CnvuhDVQWRcAfTYgh:Foundation
+                         aulahaskell-0.0.0-AWZ1CnvuhDVQWRcAfTYgh:Model
                          base-4.9.1.0:Control.Applicative base-4.9.1.0:Data.Complex
                          base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Compose
                          base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
@@ -333,17 +332,15 @@ family instance modules: adjunctions-4.3@adjunctions-4.3-A5jfd1yrmaY4DRMJuiquBp:
                          vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed.Base
                          vector-instances-3.4@vector-instances-3.4-6qKuR7R2wDjElztDeslDO1:Data.Vector.Instances
                          xml-types-0.3.6@xml-types-0.3.6-BlXpqWNn2ZGFM9gCBPuBeT:Data.XML.Types
-                         yesod-auth-1.4.19@yesod-auth-1.4.19-Lis3qGCnpJgB8Xqabl9Sxo:Yesod.Auth
-                         yesod-auth-1.4.19@yesod-auth-1.4.19-Lis3qGCnpJgB8Xqabl9Sxo:Yesod.Auth.Routes
                          yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Class.Handler
                          yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Internal.LiteApp
                          yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Types
                          yesod-static-1.5.3.1@yesod-static-1.5.3.1-3fPHfGwGXLD6UjosrxUpf7:Yesod.Static
                          zlib-0.6.1.2@zlib-0.6.1.2-7negTfm2ujt1gW4wr40MUp:Codec.Compression.Zlib.Stream
-import  -/  Foundation 97564882ab0294b940092a5a3d114123
-  Handler 98fc2ec1c50b399eb88793f53ce68c4d
-import  -/  Import ed0f71d62499abf66a9f23877019823e
-  exports: 49c4c10f14d13c8061fd287915e28ce3
+import  -/  Foundation 2e2a3f7ca77b94b39136a0d53a57d732
+  Handler 51d505028f6eeb168ad6504bb48683c8
+import  -/  Import a3409f9e00cd93c654ce74d13aa91608
+  exports: 16a7a241c1c03a17547eb83b22875034
 import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
 import  -/  base-4.9.1.0:GHC.IO.Unsafe 1c057c642b0e201f55a24585d3d94564
 import  -/  base-4.9.1.0:GHC.Num 00bfaa7b2f9d6084913c0697a8a49ec8
@@ -354,22 +351,45 @@ import  -/  yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Cor
 import  -/  yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Types 0b39941269d824c929136a6524eb02b4
 addDependentFile "config/robots.txt"
 addDependentFile "config/favicon.ico"
-4f3a47c6fbb7f00a9669df68fd21bc74
+cee1a8c4457c247751b8901eee62c5c1
+  $s$fMonadHandlerHandlerT ::
+    Yesod.Core.Class.Handler.MonadHandler
+      (Yesod.Core.Types.HandlerT site GHC.Types.IO)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ site.
+                  @ (Yesod.Core.Types.HandlerT site GHC.Types.IO)
+                  (Yesod.Core.Class.Handler.$fMonadHandlerHandlerT_$cp1MonadHandler
+                     @ GHC.Types.IO
+                     @ site
+                     Handler.Common.$s$fMonadHandlerHandlerT_$d(%,,,,%))
+                  (Yesod.Core.Class.Handler.$fMonadHandlerHandlerT_$cliftHandlerT
+                     @ GHC.Types.IO
+                     @ site
+                     Handler.Common.$s$fMonadHandlerHandlerT_$d(%,,,,%)) -}
+3bda9f672b95ff21e70094a0d159f3bd
+  $s$fMonadHandlerHandlerT_$d(%,,,,%) ::
+    Control.Monad.Trans.Resource.MonadResourceBase GHC.Types.IO
+  {- Strictness: m,
+     Unfolding: ((Control.Monad.Trans.Control.$fMonadBaseControlIOIO,
+                  Control.Monad.Catch.$fMonadThrowIO,
+                  Control.Monad.Base.$fMonadBaseIOIO,
+                  Control.Monad.IO.Class.$fMonadIOIO, GHC.Base.$fApplicativeIO)) -}
+486b9b2010cba0f540b149087bd4d14d
   $trModule :: GHC.Types.Module
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.Module
                    Handler.Common.$trModule2
                    Handler.Common.$trModule1) -}
-a54787f9c8ef8a52f085a7503883842f
+259105724aef2c3858ad436c14fa6977
   $trModule1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS "Handler.Common"#) -}
-fd353442181b39202d6499b3be291f33
+0cc7f6c601cc24087c3af63fa42aacc0
   $trModule2 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
-                   "aulahaskell-0.0.0-LoUslvgBjWU1RbrXO1tmnM"#) -}
-fcc73a6e51f056fdda1bec9742da3352
+                   "aulahaskell-0.0.0-AWZ1CnvuhDVQWRcAfTYgh"#) -}
+07ab7c82e35332e1b549e9ed31e8eede
   getFaviconR :: Foundation.Handler Yesod.Core.Types.TypedContent
   {- Arity: 2, Strictness: <L,U><S,U>,
      Unfolding: InlineRule (0, True, True)
@@ -383,7 +403,7 @@ fcc73a6e51f056fdda1bec9742da3352
                                <Foundation.App>_N
                                <GHC.Types.IO>_N
                                <Yesod.Core.Types.TypedContent>_N))) -}
-b20429ec53e09207a034bc5d532da581
+04f152541518dd64966dbbbaef604748
   getFaviconR1 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -391,8 +411,7 @@ b20429ec53e09207a034bc5d532da581
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
           Yesod.Core.Types.TypedContent #)
   {- Arity: 2, Strictness: <L,U><S,U>,
-     Unfolding: InlineRule (2, True, False)
-                (\ (eta :: Yesod.Core.Types.HandlerData
+     Unfolding: (\ (eta :: Yesod.Core.Types.HandlerData
                              Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
                    (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
                  case (Handler.Common.getFaviconR_m1
@@ -403,25 +422,9 @@ b20429ec53e09207a034bc5d532da581
                         `cast`
                       (GHC.Types.N:IO[0] <()>_R)
                         eta1 of ds1 { (#,#) ipv ipv1 ->
-                 (# ipv, Handler.Common.getFaviconR_eta9 #) }) -}
-49f0e1d25b5caada97cef3e73ec2182e
-  getFaviconR2 :: Data.ByteString.Internal.ByteString
-  {- Unfolding: (case GHC.Magic.runRW#
-                        @ 'GHC.Types.PtrRepLifted
-                        @ Data.ByteString.Internal.ByteString
-                        Handler.Common.getFaviconR3 of ds { (#,#) ipv ipv1 ->
-                 ipv1 }) -}
-16146778a44467ec383e9243fda3f8e1
-  getFaviconR3 ::
-    GHC.Prim.State# GHC.Prim.RealWorld
-    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
-          Data.ByteString.Internal.ByteString #)
-  {- Arity: 1, HasNoCafRefs -}
-4348e3312813255dbd9bf218f49b06ca
-  getFaviconR4 :: GHC.Types.Int
-  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 2592000#) -}
-b0e7217d4b818b67d749d031a04f3729
-  getFaviconR_eta9 :: Yesod.Core.Types.TypedContent
+                 (# ipv, Handler.Common.getFaviconR2 #) }) -}
+9608bb8cda7bf1c8e20bc1c883234b1b
+  getFaviconR2 :: Yesod.Core.Types.TypedContent
   {- Unfolding: (case GHC.Prim.newMutVar#
                         @ GHC.ForeignPtr.Finalizers
                         @ GHC.Prim.RealWorld
@@ -439,7 +442,7 @@ b0e7217d4b818b67d749d031a04f3729
                         addr#
                         ipv of wild { (#,#) ds3 ds4 ->
                  case Yesod.Core.Content.$w$ctoContent2
-                        Handler.Common.getFaviconR2 of ww { (#,#) ww1 ww2 ->
+                        Handler.Common.getFaviconR3 of ww { (#,#) ww1 ww2 ->
                  Yesod.Core.Types.TypedContent
                    (Data.ByteString.Internal.PS
                       addr#
@@ -447,15 +450,30 @@ b0e7217d4b818b67d749d031a04f3729
                       0#
                       (GHC.Prim.word2Int# ds4))
                    (Yesod.Core.Types.ContentBuilder ww1 ww2) } } }) -}
-656d9b1c7db377fade6c46d3a13137b8
+2ab95b09f71f7bc653601d0f539f16f5
+  getFaviconR3 :: Data.ByteString.Internal.ByteString
+  {- Unfolding: (case GHC.Magic.runRW#
+                        @ 'GHC.Types.PtrRepLifted
+                        @ Data.ByteString.Internal.ByteString
+                        Handler.Common.getFaviconR4 of ds { (#,#) ipv ipv1 ->
+                 ipv1 }) -}
+f59bae1d8e56d3c670af67e7dab9efdf
+  getFaviconR4 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.ByteString.Internal.ByteString #)
+  {- Arity: 1, HasNoCafRefs -}
+155819d566e1f1f67d8fe6795e5daa55
+  getFaviconR5 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 2592000#) -}
+0961c792bab6acca536dcb1621038f0f
   getFaviconR_m1 ::
     Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO ()
   {- Unfolding: (Yesod.Core.Handler.cacheSeconds
                    @ (Yesod.Core.Types.HandlerT Foundation.App GHC.Types.IO)
-                   (Yesod.Auth.defaultMaybeAuthId_$s$fMonadHandlerHandlerT
-                      @ Foundation.App)
-                   Handler.Common.getFaviconR4) -}
-7c7134901198dc05e8c01ab039a627fe
+                   (Handler.Common.$s$fMonadHandlerHandlerT @ Foundation.App)
+                   Handler.Common.getFaviconR5) -}
+ce6e60c748284dce4cbff87577c1dded
   getRobotsR :: Foundation.Handler Yesod.Core.Types.TypedContent
   {- Arity: 2, Strictness: <L,A><S,U>,
      Unfolding: InlineRule (0, True, True)
@@ -469,28 +487,36 @@ b0e7217d4b818b67d749d031a04f3729
                                <Foundation.App>_N
                                <GHC.Types.IO>_N
                                <Yesod.Core.Types.TypedContent>_N))) -}
-3a5f8f9c12ced7f8ea1319510a6eadf9
+b1527f53b7d9721dc02e36c334f0f1ef
   getRobotsR1 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
     -> GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
           Yesod.Core.Types.TypedContent #)
-  {- Arity: 2, Strictness: <L,A><S,U>,
+  {- Arity: 2, Strictness: <L,A><S,U>, Inline: INLINE[0],
      Unfolding: InlineRule (2, True, True)
-                (\ (eta10 :: Yesod.Core.Types.HandlerData
-                               Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
-                   (eta11 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
-                 (# eta11, Handler.Common.getRobotsR_eta9 #)) -}
-1e65afb0393ba86460a81d3c0a0322ad
-  getRobotsR2 :: Data.ByteString.Internal.ByteString
+                (\ (w :: Yesod.Core.Types.HandlerData
+                           Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
+                   (w1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 (# w1, Handler.Common.getRobotsR2 #)) -}
+7fd2c91deb95cd334de25084d5a7751a
+  getRobotsR2 :: Yesod.Core.Types.TypedContent
+  {- Unfolding: (case Yesod.Core.Content.typePlain of dt { Data.ByteString.Internal.PS ipv ipv1 ipv2 ipv3 ->
+                 case Yesod.Core.Content.$w$ctoContent2
+                        Handler.Common.getRobotsR3 of ww { (#,#) ww1 ww2 ->
+                 Yesod.Core.Types.TypedContent
+                   dt
+                   (Yesod.Core.Types.ContentBuilder ww1 ww2) } }) -}
+2a62ecc95411a11a9871e3a57e49967f
+  getRobotsR3 :: Data.ByteString.Internal.ByteString
   {- Unfolding: (case GHC.Magic.runRW#
                         @ 'GHC.Types.PtrRepLifted
                         @ Data.ByteString.Internal.ByteString
-                        Handler.Common.getRobotsR3 of ds { (#,#) ipv ipv1 ->
+                        Handler.Common.getRobotsR4 of ds { (#,#) ipv ipv1 ->
                  ipv1 }) -}
-6b3789bc19285db19075f3ebb52b0950
-  getRobotsR3 ::
+e1311c675f7067d545ac2d780061f366
+  getRobotsR4 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
           Data.ByteString.Internal.ByteString #)
@@ -508,14 +534,13 @@ b0e7217d4b818b67d749d031a04f3729
                       (GHC.ForeignPtr.PlainForeignPtr ipv1)
                       0#
                       14# #) } }) -}
-438bf1f926720cff0c93781b2ffd6c15
-  getRobotsR_eta9 :: Yesod.Core.Types.TypedContent
-  {- Unfolding: (case Yesod.Core.Content.typePlain of dt { Data.ByteString.Internal.PS ipv ipv1 ipv2 ipv3 ->
-                 case Yesod.Core.Content.$w$ctoContent2
-                        Handler.Common.getRobotsR2 of ww { (#,#) ww1 ww2 ->
-                 Yesod.Core.Types.TypedContent
-                   dt
-                   (Yesod.Core.Types.ContentBuilder ww1 ww2) } }) -}
+"SPEC/Handler.Common $fMonadHandlerHandlerT @ IO _" [ALWAYS] forall @ site
+                                                                    ($d(%,,,,%) :: Control.Monad.Trans.Resource.MonadResourceBase
+                                                                                     GHC.Types.IO)
+  Yesod.Core.Class.Handler.$fMonadHandlerHandlerT @ GHC.Types.IO
+                                                  @ site
+                                                  $d(%,,,,%)
+  = Handler.Common.$s$fMonadHandlerHandlerT @ site
 vectorised variables:
 vectorised tycons:
 vectorised reused tycons:

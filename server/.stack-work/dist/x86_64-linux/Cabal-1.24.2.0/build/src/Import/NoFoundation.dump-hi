@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2018-11-13 10:52:36.313108 UTC
+2018-11-13 11:40:07.284895 UTC
 
-interface aulahaskell-0.0.0-LoUslvgBjWU1RbrXO1tmnM:Import.NoFoundation 8002
-  interface hash: 0d1eaa68414250c000e1c42f7e034398
-  ABI hash: f522d7915ff62736e6aaf85665a2625f
-  export-list hash: e75d90d78d97cd8bee4691d3dec68a08
+interface aulahaskell-0.0.0-AWZ1CnvuhDVQWRcAfTYgh:Import.NoFoundation 8002
+  interface hash: 1dd9e81ae8262c30781f5a82f0dee01b
+  ABI hash: a4ae0d98c0250a35528104a39d346ab2
+  export-list hash: 27bf730cfa88782c66636016b595d393
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 5e6e116e79fd7c2679f3688e577f5394
   sig of: Nothing
@@ -1164,23 +1164,6 @@ exports:
   Yesod.Default.Config2.loadAppSettings
   Yesod.Default.Config2.loadAppSettingsArgs
   Yesod.Default.Config2.makeYesodLogger
-  Yesod.Auth.asHtml
-  Yesod.Auth.clearCreds
-  Yesod.Auth.credsKey
-  Yesod.Auth.defaultLoginHandler
-  Yesod.Auth.defaultMaybeAuthId
-  Yesod.Auth.getAuth
-  Yesod.Auth.loginErrorMessage
-  Yesod.Auth.loginErrorMessageI
-  Yesod.Auth.maybeAuth
-  Yesod.Auth.maybeAuthPair
-  Yesod.Auth.messageJson401
-  Yesod.Auth.provideJsonMessage
-  Yesod.Auth.requireAuth
-  Yesod.Auth.requireAuthId
-  Yesod.Auth.requireAuthPair
-  Yesod.Auth.setCreds
-  Yesod.Auth.setCredsRedirect
   Yesod.Core.defaultLayoutSub
   Yesod.Core.getRouteToParent
   Yesod.Core.maybeAuthorized
@@ -1515,6 +1498,8 @@ exports:
   Data.Aeson.Types.ToJSON.KeyValue|{Data.Aeson.Types.ToJSON..=}
   Data.Aeson.Types.ToJSON.ToJSON{Data.Aeson.Types.ToJSON.toEncoding Data.Aeson.Types.ToJSON.toEncodingList Data.Aeson.Types.ToJSON.toJSON Data.Aeson.Types.ToJSON.toJSONList}
   Control.Concurrent.Async.Async{asyncThreadId}
+  Model.User{Model.User userEmail userPassword}
+  Model.UserId
   Settings.AppSettings{Settings.AppSettings appAnalytics appAuthDummyLogin appCopyright appDatabaseConf appDetailedRequestLogging appHost appIpFromHeader appMutableStatic appPort appReloadTemplates appRoot appShouldLogAll appSkipCombining appStaticDir}
   Control.Arrow.Arrow|{Control.Arrow.&&& Control.Arrow.***}
   Control.Category.Category|{Control.Category.. Control.Category.id}
@@ -1717,7 +1702,9 @@ exports:
   Database.Persist.Class.PersistEntity.BackendSpecificFilter
   Database.Persist.Class.PersistEntity.BackendSpecificUpdate
   Database.Persist.Class.PersistEntity.Entity{Database.Persist.Class.PersistEntity.Entity entityKey entityVal}
+  Database.Persist.Class.PersistEntity.EntityField|{Model.UserEmail Model.UserId Model.UserPassword}
   Database.Persist.Class.PersistEntity.Filter{Database.Persist.Class.PersistEntity.BackendFilter Database.Persist.Class.PersistEntity.Filter Database.Persist.Class.PersistEntity.FilterAnd Database.Persist.Class.PersistEntity.FilterOr filterField filterFilter filterValue}
+  Database.Persist.Class.PersistEntity.Key|{Model.UserKey unUserKey}
   Database.Persist.Class.PersistEntity.PersistEntity{Database.Persist.Class.PersistEntity.EntityField Database.Persist.Class.PersistEntity.Key Database.Persist.Class.PersistEntity.PersistEntityBackend Database.Persist.Class.PersistEntity.Unique Database.Persist.Class.PersistEntity.entityDef Database.Persist.Class.PersistEntity.fieldLens Database.Persist.Class.PersistEntity.fromPersistValues Database.Persist.Class.PersistEntity.keyFromValues Database.Persist.Class.PersistEntity.keyToValues Database.Persist.Class.PersistEntity.persistFieldDef Database.Persist.Class.PersistEntity.persistIdField Database.Persist.Class.PersistEntity.persistUniqueKeys Database.Persist.Class.PersistEntity.persistUniqueToFieldNames Database.Persist.Class.PersistEntity.persistUniqueToValues Database.Persist.Class.PersistEntity.toPersistFields}
   Database.Persist.Class.PersistEntity.SelectOpt{Database.Persist.Class.PersistEntity.Asc Database.Persist.Class.PersistEntity.Desc Database.Persist.Class.PersistEntity.LimitTo Database.Persist.Class.PersistEntity.OffsetBy}
   Database.Persist.Class.PersistEntity.Update{Database.Persist.Class.PersistEntity.BackendUpdate Database.Persist.Class.PersistEntity.Update updateField updateUpdate updateValue}
@@ -1803,15 +1790,6 @@ exports:
   Network.Wai.Application
   Data.Yaml.Config.EnvUsage
   Yesod.Default.Config2.MergedValue{Yesod.Default.Config2.MergedValue getMergedValue}
-  Yesod.Auth.AuthException{Yesod.Auth.InvalidFacebookResponse}
-  Yesod.Auth.AuthHandler
-  Yesod.Auth.AuthPlugin{Yesod.Auth.AuthPlugin apDispatch apLogin apName}
-  Yesod.Auth.AuthRoute
-  Yesod.Auth.AuthenticationResult{Yesod.Auth.Authenticated Yesod.Auth.ServerError Yesod.Auth.UserError}
-  Yesod.Auth.Creds{Yesod.Auth.Creds credsExtra credsIdent credsPlugin}
-  Yesod.Auth.YesodAuth{Yesod.Auth.AuthId Yesod.Auth.authHttpManager Yesod.Auth.authLayout Yesod.Auth.authPlugins Yesod.Auth.authenticate Yesod.Auth.getAuthId Yesod.Auth.loginDest Yesod.Auth.loginHandler Yesod.Auth.logoutDest Yesod.Auth.maybeAuthId Yesod.Auth.onErrorHtml Yesod.Auth.onLogin Yesod.Auth.onLogout Yesod.Auth.redirectToReferer Yesod.Auth.renderAuthMessage Yesod.Auth.runHttpRequest}
-  Yesod.Auth.YesodAuthPersist{Yesod.Auth.AuthEntity Yesod.Auth.getAuthEntity}
-  Yesod.Auth.Routes.Auth
   Yesod.Core.Class.Breadcrumbs.YesodBreadcrumbs{Yesod.Core.Class.Breadcrumbs.breadcrumb}
   Yesod.Core.Class.Dispatch.YesodDispatch{Yesod.Core.Class.Dispatch.yesodDispatch}
   Yesod.Core.Class.Dispatch.YesodSubDispatch{Yesod.Core.Class.Dispatch.yesodSubDispatch}
@@ -1862,7 +1840,7 @@ exports:
   Yesod.Core.Widget.ToWidgetMedia{Yesod.Core.Widget.toWidgetMedia}
   Yesod.Routes.Class.ParseRoute{Yesod.Routes.Class.parseRoute}
   Yesod.Routes.Class.RenderRoute{Yesod.Routes.Class.Route Yesod.Routes.Class.renderRoute}
-  Yesod.Routes.Class.Route|{Yesod.Auth.Routes.CheckR Yesod.Auth.Routes.LoginR Yesod.Auth.Routes.LogoutR Yesod.Auth.Routes.PluginR Yesod.Core.Internal.LiteApp.LiteAppRoute Yesod.Core.Types.WaiSubsiteRoute Yesod.Core.Types.WaiSubsiteWithAuthRoute Yesod.Static.StaticRoute}
+  Yesod.Routes.Class.Route|{Yesod.Core.Internal.LiteApp.LiteAppRoute Yesod.Core.Types.WaiSubsiteRoute Yesod.Core.Types.WaiSubsiteWithAuthRoute Yesod.Static.StaticRoute}
   Yesod.Routes.Class.RouteAttrs{Yesod.Routes.Class.routeAttrs}
   Yesod.Form.Fields.AutoFocus
   Yesod.Form.Fields.Option{Yesod.Form.Fields.Option optionDisplay optionExternalValue optionInternalValue}
@@ -2079,7 +2057,6 @@ package dependencies: ReadArgs-1.2.3@ReadArgs-1.2.3-FZlTw1cmwFABXd9Qu17GpK
                       xss-sanitize-0.3.5.7@xss-sanitize-0.3.5.7-2Pr735gWMIKE1KECS4SIv1
                       yaml-0.8.23.3@yaml-0.8.23.3-C6ya2ht5lnU5AAyP9utctL
                       yesod-1.4.5@yesod-1.4.5-GDhOBR6sYcs6xIyNy56Max
-                      yesod-auth-1.4.19@yesod-auth-1.4.19-Lis3qGCnpJgB8Xqabl9Sxo
                       yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V
                       yesod-form-1.4.16@yesod-form-1.4.16-FvSoVGpHA8r2nWU5Chx6PU
                       yesod-newsfeed-1.6@yesod-newsfeed-1.6-FVeGFThDxmyHNMY2ecmTrZ
@@ -2118,9 +2095,9 @@ orphans: attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE21oqFTQ:Data.Att
          vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Fusion.Bundle
          vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed
          vector-instances-3.4@vector-instances-3.4-6qKuR7R2wDjElztDeslDO1:Data.Vector.Instances
-         yesod-auth-1.4.19@yesod-auth-1.4.19-Lis3qGCnpJgB8Xqabl9Sxo:Yesod.Auth
 family instance modules: adjunctions-4.3@adjunctions-4.3-A5jfd1yrmaY4DRMJuiquBp:Data.Functor.Rep
                          attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE21oqFTQ:Data.Attoparsec.Internal.Types
+                         aulahaskell-0.0.0-AWZ1CnvuhDVQWRcAfTYgh:Model
                          base-4.9.1.0:Control.Applicative base-4.9.1.0:Data.Complex
                          base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Compose
                          base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
@@ -2219,8 +2196,6 @@ family instance modules: adjunctions-4.3@adjunctions-4.3-A5jfd1yrmaY4DRMJuiquBp:
                          vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed.Base
                          vector-instances-3.4@vector-instances-3.4-6qKuR7R2wDjElztDeslDO1:Data.Vector.Instances
                          xml-types-0.3.6@xml-types-0.3.6-BlXpqWNn2ZGFM9gCBPuBeT:Data.XML.Types
-                         yesod-auth-1.4.19@yesod-auth-1.4.19-Lis3qGCnpJgB8Xqabl9Sxo:Yesod.Auth
-                         yesod-auth-1.4.19@yesod-auth-1.4.19-Lis3qGCnpJgB8Xqabl9Sxo:Yesod.Auth.Routes
                          yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Class.Handler
                          yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Internal.LiteApp
                          yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Types
@@ -2228,54 +2203,64 @@ family instance modules: adjunctions-4.3@adjunctions-4.3-A5jfd1yrmaY4DRMJuiquBp:
                          zlib-0.6.1.2@zlib-0.6.1.2-7negTfm2ujt1gW4wr40MUp:Codec.Compression.Zlib.Stream
 import  -/  aeson-1.1.2.0@aeson-1.1.2.0-7ssY6fy1GxZGXxTPcOtf2k:Data.Aeson.Types.FromJSON f70746c5b1cd1a03ee098f0728e87383
 import  -/  aeson-1.1.2.0@aeson-1.1.2.0-7ssY6fy1GxZGXxTPcOtf2k:Data.Aeson.Types.Internal f040a64200abf1dfa06f5db9b9e027c1
-import  -/  Model 760bf97d048b94d3a2b62b2f5f63c83d
-  exports: e44c28de81c0691217e13fb7a626e545
-  migrateAll 2004895515dd5c9fde5b667e1bb22254
-import  -/  Settings fd9cd92ed3e9c57f6121e27358d62974
-  exports: 7478b489d3618be90f736a5dbf5e5247
-  AppSettings ab7f2d9abf36975528e3e3c2b8515991
-  AppSettings 8df8b9e3b81a837c172218ef911dff81
-  appAnalytics d55ce682efb978917d773fde19bfd90f
-  appAuthDummyLogin 6287d6fb6a2e6c9f273561ae41c28235
-  appCopyright 53aaaf08a9822595367ce07a8f889ad6
-  appDatabaseConf 3b23a7302d9939c2b5a6afcc5273d17f
-  appDetailedRequestLogging 7a22da510236ce50933f32bcc680e78d
-  appHost aa540f6460926c550e914db1f7941481
-  appIpFromHeader b19ffcbe4dbe3acbfc9fe59e9f627390
-  appMutableStatic 914f0c1258f06e928b9957d820870e7b
-  appPort 08e9f41324f9a502f9a8011c1126c7e3
-  appReloadTemplates 8cb9fedad32b74b144b9b4a47c80d69f
-  appRoot bf7f7fd6bf26ae1b3528c7f81d61e985
-  appShouldLogAll 3ad34b1394c9e3e7fe9fd390fce3b660
-  appSkipCombining 149b18a472fdee13da1208246007671b
-  appStaticDir bf726ac7e6b789715c0507d3ae1c4782
-  combineScripts 09bce61422916c12b1fddbd84f555989
-  combineSettings 42d12fb59573a5de3eeb055d7e9d8f06
-  combineStylesheets 183ea79919a9956ee9b594d727118bd3
-  compileTimeAppSettings ed0cb76a989bbbebd1076829ae78db86
-  configSettingsYmlBS 8b0247ef40e6450a254eb214d2efa35b
-  configSettingsYmlValue f0727a190ea136efa53f3a2cfaaea291
-  widgetFile f3071b10edb28cd1d16a99cb5f1af507
-  widgetFileSettings 6233b25a8c00df1cf4c785321fba3714
-import  -/  Settings.StaticFiles 6f71648442c67f5b67c8440ec89c87ec
-  exports: 2c18a6028ec246dd652150bfb8162a2d
-  css_bootstrap_css b2b65d7626231e3e7e06f0111053ac3a
-  fonts_glyphicons_halflings_regular_eot 87cbfb7feb7104bcbbb2f17402ba6082
-  fonts_glyphicons_halflings_regular_svg a1a62dd5cc7c7bf230ef166204095108
-  fonts_glyphicons_halflings_regular_ttf 718c706e735a85181186ba8d48ade5aa
-  fonts_glyphicons_halflings_regular_woff fb64f835738cc7547270fff17deaa6a3
+import  -/  aeson-1.1.2.0@aeson-1.1.2.0-7ssY6fy1GxZGXxTPcOtf2k:Data.Aeson.Types.ToJSON d8ae0f04da94d706b89336fd9d0bf43b
+import  -/  Model d3c7cce71baa4c184a49e832d8a529a5
+  exports: fb137a70ccbfd925db9fe60c2d47dbb5
+  User a58954d69780d537f8073e11857ee236
+  User 4e0755ef0a964396423b78c17c26a138
+  UserEmail 06c985ec4a1234ffae5fb57042ffa2c8
+  UserId ef7ce30e8584750ff700c793ddf467a0
+  UserId f390c1d5171e7cc574ae314fae94706c
+  UserKey cbfdc9aff4781c72eace9d1b6b717baf
+  UserPassword 0d42495ff27e8b9168b37ca0d86fd785
+  migrateAll 65ec065b3bc101aa728f0478cbde5095
+  unUserKey 4e0755ef0a964396423b78c17c26a138
+  userEmail a43891088905ee2fdf635ccd0dca1f48
+  userPassword 7dea3433025d713b20fc3172a819e168
+import  -/  Settings 6fbcb50c5235ac23ffc4281d21354c74
+  exports: 8b77df0dbc9543f857acc2817833eeb5
+  AppSettings ca0634485a563a944b08eeab85c21708
+  AppSettings 3b64b330f31d134999a48dea45df81ce
+  appAnalytics d6c313a4f421ea1cd04cc808e75a22a1
+  appAuthDummyLogin 8de9c2420b3f9e9903a79aa6d01b61fa
+  appCopyright 1a90c7ad23334c91776af547210dfbc2
+  appDatabaseConf 9e802097dcda74cc9c4522f0f3ee9351
+  appDetailedRequestLogging 32b7fc3233dd72cab9542d1c8d927797
+  appHost 6d6e88729c1f64510fce710246efa6ec
+  appIpFromHeader eb4b15ff07170b314aa95662f49fddd2
+  appMutableStatic 03f03c302fd81379663739b2a1a3ab39
+  appPort d2dba48e4a9851a32be68ed74265d735
+  appReloadTemplates 7de9ad6f2c86340eaa917ffe8edf6c1b
+  appRoot fea4edb35e2ef583069242527b66a3ae
+  appShouldLogAll 3ef84eace21a1db68a04c8ea94d8d352
+  appSkipCombining cf6b7f99deb112f7aa671163a8c3cdf4
+  appStaticDir 5728ee4f6d70e646196bf8a65f2ca794
+  combineScripts 804c5f67eae78d5f814302b59ba27891
+  combineSettings 3f8e2d25e229adc79864e267aba68d52
+  combineStylesheets 8f9813c80e647aa719aa9ce964be9e5c
+  compileTimeAppSettings eb4c8ca0b4f207c6b108c70637fee9fe
+  configSettingsYmlBS 077ed10d4b8c9769e31d8e6719d2c5dc
+  configSettingsYmlValue 4cb6321202fe639fb7910cfd4f30a8aa
+  widgetFile 5f50f6eba5a00e6270e9110d53ac22a8
+  widgetFileSettings b3562f700fe66587ddb9d08be7f56461
+import  -/  Settings.StaticFiles 850982a9d7dd33a7375a60318762560a
+  exports: 16dde098064faaa6d5afe33a9f79efde
+  css_bootstrap_css c3af8c3d38f3c09e07c3a1dd13de5dc3
+  fonts_glyphicons_halflings_regular_eot ac0e4693ffe7372336fcccf590afaf51
+  fonts_glyphicons_halflings_regular_svg 7362cfbf3bc5f7846a222dd4941ccc10
+  fonts_glyphicons_halflings_regular_ttf 153af8a2de0eb4d0f37bb5433ea97ea5
+  fonts_glyphicons_halflings_regular_woff a406083896ebf784f25311c189032c37
 import  -/  base-4.9.1.0:Control.Applicative 32430a90492e727f4bd80db71c28600c
 import  -/  base-4.9.1.0:Control.Category 74288f70105bf6db5ff51d18c3e2c349
+import  -/  base-4.9.1.0:Control.Monad a6784c5dab0d75c63dabec5a37843f98
+import  -/  base-4.9.1.0:Control.Monad.IO.Class 1a4384f66ee999caf5366398edb6ca7b
 import  -/  base-4.9.1.0:Data.Either 20b09ef8d0a5b74fdec011c40c1587f5
 import  -/  base-4.9.1.0:Data.Functor 5ab1dc703df5b482e77efb697833ca3c
 import  -/  base-4.9.1.0:Data.Functor.Identity 6ee67943d44d50091e12d22df04741f0
-import  -/  base-4.9.1.0:Data.Maybe d876c4ffe4b3c43755a781e8ad860d88
 import  -/  base-4.9.1.0:Data.Semigroup fc55c71ff629dcbd821309c310055959
 import  -/  base-4.9.1.0:Data.String b34df69c7b6358cd40a379c8a0a78dcf
 import  -/  base-4.9.1.0:Data.Traversable 556020d7cf3c4a34a774600512918a37
-import  -/  base-4.9.1.0:Data.Typeable.Internal 0e9bdefa4325a0112d8e73b5e1e1f85d
 import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
-import  -/  base-4.9.1.0:GHC.Conc.Sync 8d0a228e5fc4d8c110495066f4d52ea1
 import  -/  base-4.9.1.0:GHC.Enum 3811281f7b5f26da514529cf3ed44009
 import  -/  base-4.9.1.0:GHC.Err 3bba35a16538d33d424682ce66876cdd
 import  -/  base-4.9.1.0:GHC.Exception e38fa3e73d54022fb9e3ce06477dfd07
@@ -2287,6 +2272,7 @@ import  -/  base-4.9.1.0:GHC.IORef 306bd532f2f3b000347cbe6316adc20e
 import  -/  base-4.9.1.0:GHC.Int e6f85fcab22769385fba2b5fce0acb40
 import  -/  base-4.9.1.0:GHC.List ab8c4e523e6c479c549d3bcd5fc4a439
 import  -/  base-4.9.1.0:GHC.Num 00bfaa7b2f9d6084913c0697a8a49ec8
+import  -/  base-4.9.1.0:GHC.Read b6821365d2d5fa2155c9e910160e7f57
 import  -/  base-4.9.1.0:GHC.Real 82e4e59051a13dba1da63e1e970a69e6
 import  -/  base-4.9.1.0:GHC.STRef b3a727731f236531861bcdc8c6db5a21
 import  -/  base-4.9.1.0:GHC.Show a027f5ac24879eaba752f44aa90fe511
@@ -2308,7 +2294,6 @@ import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
 import  -/  hashable-1.2.6.1@hashable-1.2.6.1-2ZLNuHq395GGIHwEHuqZol:Data.Hashable.Class a1b222b41dee000240e3f24bda9d56d9
 import  -/  http-client-0.5.7.0@http-client-0.5.7.0-ZH40bByQedKxMmMnUi42q:Network.HTTP.Client 061b3ff266298c4df34c97386e44eded
 import  -/  http-client-0.5.7.0@http-client-0.5.7.0-ZH40bByQedKxMmMnUi42q:Network.HTTP.Client.Request fda4c4f0f201be11bce03bca2fb45c9e
-import  -/  http-client-0.5.7.0@http-client-0.5.7.0-ZH40bByQedKxMmMnUi42q:Network.HTTP.Client.Types 3a50d3b18de4f434ed7bb6cc70d2d727
 import  -/  integer-gmp-1.0.0.1:GHC.Integer.Type 318df275d77dcdb18e0006d8d7870c2a
 import  -/  monad-control-1.0.2.2@monad-control-1.0.2.2-1Ci8dYJ8Tb7E3HTcTqOb8l:Control.Monad.Trans.Control d1a682e86ec8db84394f47655fd0bb7a
 import  -/  monad-logger-0.3.25.1@monad-logger-0.3.25.1-C5T06yv6lw54Umfdl3S8et:Control.Monad.Logger 16886ac8358a362ce7543433ade3f7e5
@@ -2323,23 +2308,24 @@ import  -/  mutable-containers-0.3.3@mutable-containers-0.3.3-LD59mBwpMYWF0vy4Uy
 import  -/  mutable-containers-0.3.3@mutable-containers-0.3.3-LD59mBwpMYWF0vy4UyNV9R:Data.Mutable.PRef f804b2cca09937822d892fe29185f8b2
 import  -/  mutable-containers-0.3.3@mutable-containers-0.3.3-LD59mBwpMYWF0vy4UyNV9R:Data.Mutable.SRef f595ad4bbc81b9c7c0c1cca7afe6644a
 import  -/  mutable-containers-0.3.3@mutable-containers-0.3.3-LD59mBwpMYWF0vy4UyNV9R:Data.Mutable.URef 58da52dd1282c352423ca739cbda8801
+import  -/  path-pieces-0.2.1@path-pieces-0.2.1-Ap205zdHJCr3aorBcPaHM5:Web.PathPieces cf96b7878e0fca4afda92e7ea989ff12
 import  -/  persistent-2.7.0@persistent-2.7.0-EkiQsDHg8Z6Ikjfvk7Im1u:Database.Persist.Class.PersistConfig 7975c5b69de3feb71de8c6a4a359fca3
 import  -/  persistent-2.7.0@persistent-2.7.0-EkiQsDHg8Z6Ikjfvk7Im1u:Database.Persist.Class.PersistEntity b1a81164694b45dd782d2c329cb2cab2
+import  -/  persistent-2.7.0@persistent-2.7.0-EkiQsDHg8Z6Ikjfvk7Im1u:Database.Persist.Class.PersistField 850941182368a853ac6a599bf8d67072
 import  -/  persistent-2.7.0@persistent-2.7.0-EkiQsDHg8Z6Ikjfvk7Im1u:Database.Persist.Class.PersistStore cf3035bd99fb071645511275577dc7fe
+import  -/  persistent-2.7.0@persistent-2.7.0-EkiQsDHg8Z6Ikjfvk7Im1u:Database.Persist.Sql.Migration c3efd98f188687fb9a8212bb9f190fcc
 import  -/  persistent-2.7.0@persistent-2.7.0-EkiQsDHg8Z6Ikjfvk7Im1u:Database.Persist.Sql.Types d1468ed1aee3c19bb74284007c274b2b
 import  -/  persistent-2.7.0@persistent-2.7.0-EkiQsDHg8Z6Ikjfvk7Im1u:Database.Persist.Sql.Types.Internal fd02661b59f7487577229666ddcf6f7f
 import  -/  persistent-2.7.0@persistent-2.7.0-EkiQsDHg8Z6Ikjfvk7Im1u:Database.Persist.Types.Base 8f4313d7fc23a55070756850ba86f3ad
 import  -/  persistent-template-2.5.2@persistent-template-2.5.2-LNPM4iCBuHkAGJb4ZvbyJS:Database.Persist.TH 29533d16ea8ca549bc45e8d5f2842446
 import  -/  primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Control.Monad.Primitive 6f29f7c5aeee7400d08244e0179fc37e
-import  -/  primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Data.Primitive.MutVar 0d45f1c497d8105899d11b3601a0ead9
 import  -/  resourcet-1.1.9@resourcet-1.1.9-L2BUQrxWZMwDiwhcuyPuNi:Control.Monad.Trans.Resource.Internal 50c93ad6ec81754501e8820a059dce55
-import  -/  shakespeare-2.0.14@shakespeare-2.0.14-FNvjJPHGgnVJw5IpBEAfAj:Text.Cassius 336688e62a6613d225f432045a927247
-import  -/  shakespeare-2.0.14@shakespeare-2.0.14-FNvjJPHGgnVJw5IpBEAfAj:Text.Hamlet f0191913c7fb82d3b277f10e3ea32aec
+import  -/  resourcet-1.1.9@resourcet-1.1.9-L2BUQrxWZMwDiwhcuyPuNi:Data.Acquire.Internal 03aadd6eb41ed38f345bda80017b4879
 import  -/  shakespeare-2.0.14@shakespeare-2.0.14-FNvjJPHGgnVJw5IpBEAfAj:Text.Internal.Css 2aa6f780591bfd712650fe8f47808a33
-import  -/  shakespeare-2.0.14@shakespeare-2.0.14-FNvjJPHGgnVJw5IpBEAfAj:Text.Julius 81cb4404bae7a131dc01b39b5d3323e6
-import  -/  shakespeare-2.0.14@shakespeare-2.0.14-FNvjJPHGgnVJw5IpBEAfAj:Text.Lucius 74f23b1c009a9d1ee3c3fbc05df417e1
 import  -/  text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Internal 9bfcbbbe07ecef48f631025a838df7da
+import  -/  time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Days 0625fb086700e00eeabe68d7be3fc9e6
 import  -/  time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian 04a8b2fb0c663c25de5cf9d7024d8458
+import  -/  time-1.6.0.1@time-1.6.0.1:Data.Time.Clock.UTC a11128e40404d4167f29d45f57b1b0af
 import  -/  time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse ca4fefe1846c5cb51836ffb85274a6e6
 import  -/  transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Reader 1b607a084a390ae0e50e8f8dcbf2541a
 import  -/  unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-Bp9XgxjuHxcI4tFehVMDGC:Data.HashMap.Base 214d0e8bbe09552a4e9173f83388cb27
@@ -2348,32 +2334,29 @@ import  -/  vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector 6
 import  -/  vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed.Base 5b746d7e99b6b2dacbd3d043cb3d3d35
 import  -/  yaml-0.8.23.3@yaml-0.8.23.3-C6ya2ht5lnU5AAyP9utctL:Data.Yaml.Config 19127d96481d97d67b75c5250686daed
 import  -/  yesod-1.4.5@yesod-1.4.5-GDhOBR6sYcs6xIyNy56Max:Yesod.Default.Config2 53cd0fa2d4b86e66a1cda1fc656f3008
-import  -/  yesod-auth-1.4.19@yesod-auth-1.4.19-Lis3qGCnpJgB8Xqabl9Sxo:Yesod.Auth 125358ac5253794cc2bb58e574289180
-import  -/  yesod-auth-1.4.19@yesod-auth-1.4.19-Lis3qGCnpJgB8Xqabl9Sxo:Yesod.Auth.Routes dd02cb148a7b0cf07592fa020a9873e8
 import  -/  yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Class.Handler 5d1f9b8655f751a9604cc00d4dadf70f
 import  -/  yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Internal.LiteApp d01e2fff882fa984c802427df7212818
 import  -/  yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Types 0b39941269d824c929136a6524eb02b4
-import  -/  yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Widget 869ea22c83fb6f57618c9b7917660192
 import  -/  yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Routes.Class 1402a53c0596ce6914d771c3b52c0c4f
 import  -/  yesod-static-1.5.3.1@yesod-static-1.5.3.1-3fPHfGwGXLD6UjosrxUpf7:Yesod.Static e8f90c76bf5b168d668c933b381656c3
 addDependentFile "/home/ubuntu/.stack/programs/x86_64-linux/ghc-8.0.2/lib/ghc-8.0.2/include/ghcversion.h"
 addDependentFile ".stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/autogen/cabal_macros.h"
 addDependentFile "/usr/include/stdc-predef.h"
-1641295eace51e9b1393bdc0876e7ddc
+60f61c93ba260f6a38f4dc820f45ba8b
   $trModule :: GHC.Types.Module
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.Module
                    Import.NoFoundation.$trModule2
                    Import.NoFoundation.$trModule1) -}
-ce09b5cc18288b65f9710cc5e41cd0e9
+da2a92f2c01fb8b6c751b51bfc6c6855
   $trModule1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS "Import.NoFoundation"#) -}
-328d0299d921abbcea2b2532f227c693
+6e8f4160101263689c8568e0058f9edc
   $trModule2 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
-                   "aulahaskell-0.0.0-LoUslvgBjWU1RbrXO1tmnM"#) -}
+                   "aulahaskell-0.0.0-AWZ1CnvuhDVQWRcAfTYgh"#) -}
 vectorised variables:
 vectorised tycons:
 vectorised reused tycons:

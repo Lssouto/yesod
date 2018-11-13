@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2018-11-13 10:52:39.015256 UTC
+2018-11-13 11:40:10.76535 UTC
 
-interface aulahaskell-0.0.0-LoUslvgBjWU1RbrXO1tmnM:Handler.Cliente 8002
-  interface hash: 05258185197ca3f1925bbc01b3543e2a
-  ABI hash: 0746c99df0e1db82e77150fa956bd424
-  export-list hash: 1e8b56763333b07e7cc4a1dce12cf412
+interface aulahaskell-0.0.0-AWZ1CnvuhDVQWRcAfTYgh:Handler.Cliente 8002
+  interface hash: d212baa50b3f543eca6854a9e01f83bb
+  ABI hash: 335a6b8a9e574fd9091e4172f5e2794d
+  export-list hash: 30c9a69730871d94fe938f3105649907
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: e13b090fe4a1c5cdba4e66a8865495af
   sig of: Nothing
@@ -190,7 +190,6 @@ package dependencies: ReadArgs-1.2.3@ReadArgs-1.2.3-FZlTw1cmwFABXd9Qu17GpK
                       xss-sanitize-0.3.5.7@xss-sanitize-0.3.5.7-2Pr735gWMIKE1KECS4SIv1
                       yaml-0.8.23.3@yaml-0.8.23.3-C6ya2ht5lnU5AAyP9utctL
                       yesod-1.4.5@yesod-1.4.5-GDhOBR6sYcs6xIyNy56Max
-                      yesod-auth-1.4.19@yesod-auth-1.4.19-Lis3qGCnpJgB8Xqabl9Sxo
                       yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V
                       yesod-form-1.4.16@yesod-form-1.4.16-FvSoVGpHA8r2nWU5Chx6PU
                       yesod-newsfeed-1.6@yesod-newsfeed-1.6-FVeGFThDxmyHNMY2ecmTrZ
@@ -229,10 +228,10 @@ orphans: attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE21oqFTQ:Data.Att
          vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Fusion.Bundle
          vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed
          vector-instances-3.4@vector-instances-3.4-6qKuR7R2wDjElztDeslDO1:Data.Vector.Instances
-         yesod-auth-1.4.19@yesod-auth-1.4.19-Lis3qGCnpJgB8Xqabl9Sxo:Yesod.Auth
 family instance modules: adjunctions-4.3@adjunctions-4.3-A5jfd1yrmaY4DRMJuiquBp:Data.Functor.Rep
                          attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE21oqFTQ:Data.Attoparsec.Internal.Types
-                         aulahaskell-0.0.0-LoUslvgBjWU1RbrXO1tmnM:Foundation
+                         aulahaskell-0.0.0-AWZ1CnvuhDVQWRcAfTYgh:Foundation
+                         aulahaskell-0.0.0-AWZ1CnvuhDVQWRcAfTYgh:Model
                          base-4.9.1.0:Control.Applicative base-4.9.1.0:Data.Complex
                          base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Compose
                          base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
@@ -331,30 +330,28 @@ family instance modules: adjunctions-4.3@adjunctions-4.3-A5jfd1yrmaY4DRMJuiquBp:
                          vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed.Base
                          vector-instances-3.4@vector-instances-3.4-6qKuR7R2wDjElztDeslDO1:Data.Vector.Instances
                          xml-types-0.3.6@xml-types-0.3.6-BlXpqWNn2ZGFM9gCBPuBeT:Data.XML.Types
-                         yesod-auth-1.4.19@yesod-auth-1.4.19-Lis3qGCnpJgB8Xqabl9Sxo:Yesod.Auth
-                         yesod-auth-1.4.19@yesod-auth-1.4.19-Lis3qGCnpJgB8Xqabl9Sxo:Yesod.Auth.Routes
                          yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Class.Handler
                          yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Internal.LiteApp
                          yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Types
                          yesod-static-1.5.3.1@yesod-static-1.5.3.1-3fPHfGwGXLD6UjosrxUpf7:Yesod.Static
                          zlib-0.6.1.2@zlib-0.6.1.2-7negTfm2ujt1gW4wr40MUp:Codec.Compression.Zlib.Stream
-import  -/  Import ed0f71d62499abf66a9f23877019823e
-  exports: 49c4c10f14d13c8061fd287915e28ce3
-1acd6c7428d226a83434ef892ec2609b
+import  -/  Import a3409f9e00cd93c654ce74d13aa91608
+  exports: 16a7a241c1c03a17547eb83b22875034
+6764c918dd7d9aa6e198007b51b6ec48
   $trModule :: GHC.Types.Module
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.Module
                    Handler.Cliente.$trModule2
                    Handler.Cliente.$trModule1) -}
-0d08dfab876df764e5234e1cbb591033
+1859cb728458f7008391f19b999c3f37
   $trModule1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS "Handler.Cliente"#) -}
-c4c63a7d3e155de0b97227f1bb0561ab
+aa3e2f2d136cfa17b8baca6117726769
   $trModule2 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
-                   "aulahaskell-0.0.0-LoUslvgBjWU1RbrXO1tmnM"#) -}
+                   "aulahaskell-0.0.0-AWZ1CnvuhDVQWRcAfTYgh"#) -}
 vectorised variables:
 vectorised tycons:
 vectorised reused tycons:

@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: b0c64130608cb1b8424fcf9d48c2490f6600901fff6a9eb6208b2d8c3dc45510
+-- hash: ef56b9b9ed64478230001594a353ae6a8528aed450a9fab3161bce84d7f774a9
 
 name:           aulahaskell
 version:        0.0.0
@@ -24,6 +24,7 @@ library
   exposed-modules:
       Application
       Foundation
+      Handler.Auth
       Handler.Cliente
       Handler.Common
       Handler.Home
@@ -66,6 +67,7 @@ library
     , unordered-containers
     , vector
     , wai
+    , wai-cors
     , wai-extra >=3.0 && <3.1
     , wai-logger >=2.2 && <2.4
     , warp >=3.0 && <3.3
@@ -121,6 +123,7 @@ executable aulahaskell
     , unordered-containers
     , vector
     , wai
+    , wai-cors
     , wai-extra >=3.0 && <3.1
     , wai-logger >=2.2 && <2.4
     , warp >=3.0 && <3.3

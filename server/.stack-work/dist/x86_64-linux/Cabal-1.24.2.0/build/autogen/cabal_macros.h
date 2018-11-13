@@ -210,6 +210,13 @@
   (major1) == 3 && (major2) <  2 || \
   (major1) == 3 && (major2) == 2 && (minor) <= 1)
 
+/* package wai-cors-0.2.5 */
+#define VERSION_wai_cors "0.2.5"
+#define MIN_VERSION_wai_cors(major1,major2,minor) (\
+  (major1) <  0 || \
+  (major1) == 0 && (major2) <  2 || \
+  (major1) == 0 && (major2) == 2 && (minor) <= 5)
+
 /* package wai-extra-3.0.20.0 */
 #define VERSION_wai_extra "3.0.20.0"
 #define MIN_VERSION_wai_extra(major1,major2,minor) (\
@@ -343,7 +350,7 @@
   (major1) == 2 && (major2) <  24 || \
   (major1) == 2 && (major2) == 24 && (minor) <= 0)
 
-#define CURRENT_COMPONENT_ID "aulahaskell-0.0.0-LoUslvgBjWU1RbrXO1tmnM"
+#define CURRENT_COMPONENT_ID "aulahaskell-0.0.0-AWZ1CnvuhDVQWRcAfTYgh"
 
-#define CURRENT_PACKAGE_KEY "aulahaskell-0.0.0-LoUslvgBjWU1RbrXO1tmnM"
+#define CURRENT_PACKAGE_KEY "aulahaskell-0.0.0-AWZ1CnvuhDVQWRcAfTYgh"
 

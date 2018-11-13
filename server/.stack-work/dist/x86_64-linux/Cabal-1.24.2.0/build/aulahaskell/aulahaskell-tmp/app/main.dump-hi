@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2018-11-13 10:54:03.073606 UTC
+2018-11-13 11:27:06.441958 UTC
 
 interface main@main:Main 8002
-  interface hash: ec3f361df76aa940d949faf59ffb8e71
-  ABI hash: 1fbf4adf23784e3c2938264e94389569
-  export-list hash: cfef6cd16d934e11371fe841758ab425
+  interface hash: 158701216237f2f745c02ab7302af794
+  ABI hash: 85e95b3990fbb5bbbee127f823b8869c
+  export-list hash: 5f56d8188bb65a59bf69a5500b437a2f
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: d071ff0b3bd4d2477194b07d6184fadc
   sig of: Nothing
@@ -28,11 +28,12 @@ package dependencies: ReadArgs-1.2.3@ReadArgs-1.2.3-FZlTw1cmwFABXd9Qu17GpK
                       async-2.1.1.1@async-2.1.1.1-8yywY4inVGRLJSCg60gBXj
                       attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE21oqFTQ
                       attoparsec-iso8601-1.0.0.0@attoparsec-iso8601-1.0.0.0-CiauZZhskHA6jYy7CqE2mZ
-                      aulahaskell-0.0.0@aulahaskell-0.0.0-LoUslvgBjWU1RbrXO1tmnM
+                      aulahaskell-0.0.0@aulahaskell-0.0.0-AWZ1CnvuhDVQWRcAfTYgh
                       auto-update-0.1.4@auto-update-0.1.4-EmUvNdmhEju51bHrtaEMpz
                       base-4.9.1.0
                       base-compat-0.9.3@base-compat-0.9.3-KeJp8zYMpcS9WibvTcxU22
                       base-orphans-0.6@base-orphans-0.6-AbJ3lKVXygDCG0eeQEv8Iu
+                      base-unicode-symbols-0.2.2.4@base-unicode-symbols-0.2.2.4-GJVqB7ZApypLPm9xi9vicw
                       base16-bytestring-0.1.1.6@base16-bytestring-0.1.1.6-4E2p94lTx8gIceMhu8Kl9o
                       base64-bytestring-1.0.0.1@base64-bytestring-1.0.0.1-4O9TExPPz6eI82Yj7L4SIj
                       basement-0.0.2@basement-0.0.2-HQuQCDQkzPb1RQsskWNdsw
@@ -178,6 +179,7 @@ package dependencies: ReadArgs-1.2.3@ReadArgs-1.2.3-FZlTw1cmwFABXd9Qu17GpK
                       vector-instances-3.4@vector-instances-3.4-6qKuR7R2wDjElztDeslDO1
                       wai-3.2.1.1@wai-3.2.1.1-GYhAFGd1F2uKjCUZVPyC2C
                       wai-app-static-3.1.6.1@wai-app-static-3.1.6.1-IWVzgvpaMYRH5pqRQk33K1
+                      wai-cors-0.2.5@wai-cors-0.2.5-6H3cGSOljbcJ8PvDNMVPik
                       wai-extra-3.0.20.0@wai-extra-3.0.20.0-Dj9t4P11I8BnwNE6pZcEP
                       wai-logger-2.3.0@wai-logger-2.3.0-G2LMsBpHwLV49tDfVWxzX4
                       warp-3.2.13@warp-3.2.13-FhWulh599WH9bUCGJnpWGc
@@ -191,7 +193,6 @@ package dependencies: ReadArgs-1.2.3@ReadArgs-1.2.3-FZlTw1cmwFABXd9Qu17GpK
                       xss-sanitize-0.3.5.7@xss-sanitize-0.3.5.7-2Pr735gWMIKE1KECS4SIv1
                       yaml-0.8.23.3@yaml-0.8.23.3-C6ya2ht5lnU5AAyP9utctL
                       yesod-1.4.5@yesod-1.4.5-GDhOBR6sYcs6xIyNy56Max
-                      yesod-auth-1.4.19@yesod-auth-1.4.19-Lis3qGCnpJgB8Xqabl9Sxo
                       yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V
                       yesod-form-1.4.16@yesod-form-1.4.16-FvSoVGpHA8r2nWU5Chx6PU
                       yesod-newsfeed-1.6@yesod-newsfeed-1.6-FVeGFThDxmyHNMY2ecmTrZ
@@ -200,7 +201,7 @@ package dependencies: ReadArgs-1.2.3@ReadArgs-1.2.3-FZlTw1cmwFABXd9Qu17GpK
                       zlib-0.6.1.2@zlib-0.6.1.2-7negTfm2ujt1gW4wr40MUp
 orphans: attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE21oqFTQ:Data.Attoparsec.ByteString.Char8
          attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE21oqFTQ:Data.Attoparsec.Text.Internal
-         aulahaskell-0.0.0@aulahaskell-0.0.0-LoUslvgBjWU1RbrXO1tmnM:Application
+         aulahaskell-0.0.0@aulahaskell-0.0.0-AWZ1CnvuhDVQWRcAfTYgh:Application
          base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
          base-orphans-0.6@base-orphans-0.6-AbJ3lKVXygDCG0eeQEv8Iu:Data.Orphans
          binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
@@ -231,10 +232,10 @@ orphans: attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE21oqFTQ:Data.Att
          vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Fusion.Bundle
          vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed
          vector-instances-3.4@vector-instances-3.4-6qKuR7R2wDjElztDeslDO1:Data.Vector.Instances
-         yesod-auth-1.4.19@yesod-auth-1.4.19-Lis3qGCnpJgB8Xqabl9Sxo:Yesod.Auth
 family instance modules: adjunctions-4.3@adjunctions-4.3-A5jfd1yrmaY4DRMJuiquBp:Data.Functor.Rep
                          attoparsec-0.13.1.0@attoparsec-0.13.1.0-3ql4hcH9pGfBAlE21oqFTQ:Data.Attoparsec.Internal.Types
-                         aulahaskell-0.0.0@aulahaskell-0.0.0-LoUslvgBjWU1RbrXO1tmnM:Foundation
+                         aulahaskell-0.0.0@aulahaskell-0.0.0-AWZ1CnvuhDVQWRcAfTYgh:Foundation
+                         aulahaskell-0.0.0@aulahaskell-0.0.0-AWZ1CnvuhDVQWRcAfTYgh:Model
                          base-4.9.1.0:Control.Applicative base-4.9.1.0:Data.Complex
                          base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Compose
                          base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
@@ -333,14 +334,12 @@ family instance modules: adjunctions-4.3@adjunctions-4.3-A5jfd1yrmaY4DRMJuiquBp:
                          vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed.Base
                          vector-instances-3.4@vector-instances-3.4-6qKuR7R2wDjElztDeslDO1:Data.Vector.Instances
                          xml-types-0.3.6@xml-types-0.3.6-BlXpqWNn2ZGFM9gCBPuBeT:Data.XML.Types
-                         yesod-auth-1.4.19@yesod-auth-1.4.19-Lis3qGCnpJgB8Xqabl9Sxo:Yesod.Auth
-                         yesod-auth-1.4.19@yesod-auth-1.4.19-Lis3qGCnpJgB8Xqabl9Sxo:Yesod.Auth.Routes
                          yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Class.Handler
                          yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Internal.LiteApp
                          yesod-core-1.4.37@yesod-core-1.4.37-9j0qKMPCLP0L75AGd8Tz4V:Yesod.Core.Types
                          yesod-static-1.5.3.1@yesod-static-1.5.3.1-3fPHfGwGXLD6UjosrxUpf7:Yesod.Static
                          zlib-0.6.1.2@zlib-0.6.1.2-7negTfm2ujt1gW4wr40MUp:Codec.Compression.Zlib.Stream
-import  -/  aulahaskell-0.0.0@aulahaskell-0.0.0-LoUslvgBjWU1RbrXO1tmnM:Application fae02a393ff2a7c841af9801c90dcd78
+import  -/  aulahaskell-0.0.0@aulahaskell-0.0.0-AWZ1CnvuhDVQWRcAfTYgh:Application 5043eb37b451c44e11af7cf81ab7de79
 import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
 import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
 d6831ef04cb9301b090dfae6f7bb7ec7
@@ -355,12 +354,12 @@ d6831ef04cb9301b090dfae6f7bb7ec7
   $trModule2 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS "main"#) -}
-f70dd472ab3c9cd3f0fbb0e70f914c76
+2241bd712cdc3ecabcb407b4ae512c16
   main :: GHC.Types.IO ()
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: InlineRule (0, True, True)
                 Application.appMain1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
-013af7764551db1629ee50c30289b1b4
+50cc5be02359806d709ab7fffce40a9a
   main1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
