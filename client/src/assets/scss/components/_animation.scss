@@ -1,0 +1,47 @@
+//Generic
+.super-fast-e{
+  @include animation-spd(.1s);
+}
+.fast-e{
+  @include animation-spd(.2s);
+}
+.slow-e{
+  @include animation-spd(.4s);
+}
+
+//Fade
+.fade-enter-active, .fade-leave-active {
+  transition-property: opacity;
+  transition-duration: .12s;
+}
+
+.fade-enter-active {
+  transition-delay: .12s;
+}
+
+.fade-enter, .fade-leave-active {
+  opacity: 0
+}
+//Slide
+.slide-enter-active{
+  transition: all .3s ease;
+}
+.slide-leave-active{
+   transition: all .3s;
+}
+.slide-enter, .slide-leave-to{
+  transform: translateX(-100%);
+}
+
+//Slide fade
+.slide-fade-enter-active {
+  transition: all .3s ease;
+}
+.slide-fade-leave-active {
+  transition: all .3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-fade-enter, .slide-fade-leave-to{
+  transform: translateX(10px);
+  opacity: 0;
+}
+

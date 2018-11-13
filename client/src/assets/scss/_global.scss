@@ -1,0 +1,86 @@
+*,*:before,*:after{
+    box-sizing: border-box;
+}
+
+.relative{
+    position: relative;
+}
+.thin{
+    font-weight: thin;
+}
+.max-w{
+    width: 100%;
+}
+.p-0{
+    padding: 0 !important;
+}
+.m-0{
+    margin: 0 !important
+}
+.hidden{
+    display: none;
+}
+
+.title{
+    display: block;
+    text-align: center;
+    margin: 15px 0;
+    font-weight: bolder;
+    color: $dark-primary;
+    & + .sub-title{
+        display: block;
+        margin: -15px 0 30px;
+        text-align: center;
+    }
+}
+//Flex
+.flex-align{
+    @include flex-align(1 1 auto);
+}
+
+.box{
+    box-shadow: 0 0 10px 0 darken($light-gray,10%);
+    padding: 15px;
+    display: inline-block;
+    z-index: 5;
+    margin-top: 20px;
+    @extend .fast-e;
+    &:hover{
+        box-shadow: 0 5px 4px 2px lighten($medium-gray,8%);
+        z-index: 10;
+    }
+    &-rounded{
+        border-radius:10px;
+    }
+}
+
+.msg-box{
+    display:block;
+    margin: 15px 0;
+    border: 2px solid transparent;
+    padding: 10px 15px;
+    font-size: 22px;
+    border-radius: 4px;
+    color: $white;
+    text-shadow: 0 0 6px rgba(0,0,0,.4);
+    @extend .shadowbox;
+    &-error{
+        background-color: lighten($error,5%);
+    }
+    &-warning{
+        background-color: lighten($warning,5%);
+    }
+    &-success{
+        background-color: lighten($primary,5%);
+    }
+}
+.shadowbox{
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.6);
+}
+.page-title{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: center;
+    border-bottom: 2px solid $secundary;
+    padding-bottom: 4px;
+}

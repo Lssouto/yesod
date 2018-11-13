@@ -1,0 +1,38 @@
+.btn{
+    @extend .fast-e;
+    margin: 15px 0;
+    padding: 5px 25px;
+    font-weight: bolder;
+    font-size: 18px;
+    &:not(.__no-shadow){
+        box-shadow: 0 0 10px 0 #d9d9d9;    
+    }
+
+    &--radius{
+        border-radius: 10px;
+    }
+    &--no-margin{
+        margin: 0;
+    }
+    &--min{
+     font-size: 15px;
+     padding: 5px 16px;
+    }
+    span:not(.default){
+        margin-left: 15px;
+    }
+    &:focus{
+        box-shadow: none;
+    }
+    &[disabled="disabled"]{
+        border: 2px solid $medium-gray;
+        color: $medium-gray;
+        opacity: 0.3;
+    }
+    &:hover{
+        box-shadow: 0 4px 4px rgba(0,0,0,.5);
+    }
+    &:active{
+        transform: translate3d(0,2px,0);
+    }
+}

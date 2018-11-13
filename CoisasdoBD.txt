@@ -1,0 +1,43 @@
+host
+ec2-23-21-147-71.compute-1.amazonaws.com
+Database
+d59qvvutbgecrl
+User
+juyloreytycclx
+Port
+5432
+Password
+058299f7bed3747ce87a729a68a142009bdbb7ce0ab85c66ee52aebf86edd928
+URI
+postgres://juyloreytycclx:058299f7bed3747ce87a729a68a142009bdbb7ce0ab85c66ee52aebf86edd928@ec2-23-21-147-71.compute-1.amazonaws.com:5432/d59qvvutbgecrl
+Heroku CLI
+heroku pg:psql postgresql-polished-63479 --app novobd
+
+--
+
+
+Para rodar o banco: 
+psql -h ec2-23-21-147-71.compute-1.amazonaws.com -U juyloreytycclx -d d59qvvutbgecrl
+        host                                            usuario                 database
+
+senha: 058299f7bed3747ce87a729a68a142009bdbb7ce0ab85c66ee52aebf86edd928
+
+---
+
+Comandos:
+select * from Produtos;
+
+
+---
+Vai ficar algo assim: 
+
+
+regianeharada:~/workspace $ psql -h ec2-23-21-147-71.compute-1.amazonaws.com -U juyloreytycclx -d d59qvvutbgecrl
+Password for user juyloreytycclx: 
+psql (9.3.18, server 10.5 (Ubuntu 10.5-1.pgdg14.04+1))
+WARNING: psql major version 9.3, server major version 10.
+         Some psql features might not work.
+SSL connection (cipher: ECDHE-RSA-AES256-GCM-SHA384, bits: 256)
+Type "help" for help.
+
+d59qvvutbgecrl=> 

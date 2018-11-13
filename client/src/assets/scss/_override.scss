@@ -1,0 +1,27 @@
+body{
+    font-family: 'Montserrat','Arial', 'sans-serif';
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a,a:hover{
+    text-decoration: none;
+}
+a:focus{
+    outline-color: transparent !important;
+    outline-width: 0px !important;
+}
+input.form-control:focus,textarea.form-control:focus,select.form-control:focus{
+    box-shadow: none;
+    border-color: rgba(0,0,0,.4);
+}
+.fixed-top{
+    z-index: 100 !important;
+}
+.dropdown-menu{
+    z-index: 150 !important;
+}
