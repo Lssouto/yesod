@@ -1,5 +1,5 @@
 import Api from './Api'
-const Url = '/user'
+const Url = '/usuario'
 const isPartialLoader = false;
 
 export default {
@@ -7,7 +7,7 @@ export default {
         return Api.post(Url + '/changePassword', user, isPartialLoader );
     },
     create(user){
-        return Api.post(Url + '/new', user, isPartialLoader)
+        return Api.post(Url + '/', user, isPartialLoader)
     },
     fgtPassword(user){
         return Api.post(Url + '/fgtPassword', user, isPartialLoader)

@@ -5,6 +5,8 @@
 
 /auth AuthR POST
 
+/auth/logout LogoutR GET
+
 /usuario UsuarioR POST GET
 
 /usuario/#UserId OneUsuarioR GET
