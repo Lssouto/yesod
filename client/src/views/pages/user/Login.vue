@@ -92,9 +92,10 @@ export default {
             }
             else{
             
-                this.$store.dispatch('setToken', response.data.token)
+                this.$store.dispatch('setToken', "teste")
                 
-                const isPasswordDateValid = this.verifyPasswordDate(response.data.dt_pwdExpires)
+                // const isPasswordDateValid = this.verifyPasswordDate(response.data.dt_pwdExpires)
+                let isPasswordDateValid = true
                 this.$store.dispatch('setPasswordValidState', isPasswordDateValid)
                 console.log(isPasswordDateValid)
                 if(!isPasswordDateValid){

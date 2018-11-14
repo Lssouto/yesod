@@ -4,3 +4,7 @@
 /robots.txt RobotsR GET
 
 /auth AuthR POST
+
+/usuario UsuarioR POST GET
+
+/usuario/#UserId OneUsuarioR GET
