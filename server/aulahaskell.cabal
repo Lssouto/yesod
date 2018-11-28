@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: fb727b7b6bdcf89ae8897ef2b86fca0db6b760893d5cb601d00f178b099f88bd
+-- hash: 5eefc824242ad8af765d8c4542694de5916e266fdc95cc99c7e3335c7b53a861
 
 name:           aulahaskell
 version:        0.0.0
@@ -27,6 +27,7 @@ library
       Handler.Auth
       Handler.Common
       Handler.Home
+      Handler.Tag
       Handler.Usuario
       Import
       Import.NoFoundation

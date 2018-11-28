@@ -10,3 +10,5 @@
 /usuario UsuarioR POST GET
 
 /usuario/#UserId OneUsuarioR GET
+
+/tag TagR GET

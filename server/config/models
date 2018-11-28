@@ -1,3 +1,12 @@
 User json
      password       Text
      email          Text 
+     
+Materia json
+     nome           Text
+     descricao      Text
+
+Tag json
+     nome           Text
+     idMateria      MateriaId
+     
