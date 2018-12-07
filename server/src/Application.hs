@@ -41,11 +41,12 @@ import Handler.Common
 import Handler.Home
 
 
---EH AQUI QUE FICA AS TABELAS !!!!!!!
+--TABELAS AQUI!
 
 import Handler.Auth
 import Handler.Usuario
 import Handler.Tag
+import Handler.Materia
 
 -- This line actually creates our YesodDispatch instance. It is the second half
 -- of the call to mkYesodData which occurs in Foundation.hs. Please see the
