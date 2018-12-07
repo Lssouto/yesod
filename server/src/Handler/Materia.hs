@@ -9,15 +9,15 @@ import Import
 import Network.HTTP.Types.Status
 import Database.Persist.Postgresql
 
-getHomeR :: Handler Html
-getHomeR = undefined
 
---getUsuarioR :: Handler TypedContent
---getUsuarioR = do
---    usuario <- runDB $ selectList [] [Asc UserEmail]
---    sendStatusJSON ok200 (object [ "data" .= usuario
---                                 , "status" .= True 
---                                 ])
+
+getMateriaR :: Handler TypedContent
+getMateriaR = do
+    materia <- runDB $ selectList [] [Asc MateriaNome]
+    sendStatusJSON ok200 (object [ "data" .= materia
+                                 , "status" .= True 
+                                 ])
+                                 
 
 --postUsuarioR :: Handler TypedContent
 --postUsuarioR = do

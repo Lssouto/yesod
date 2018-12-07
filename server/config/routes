@@ -3,12 +3,12 @@
 /favicon.ico FaviconR GET
 /robots.txt RobotsR GET
 
-/auth AuthR POST
+/auth               AuthR           POST
+/auth/logout        LogoutR         GET
 
-/auth/logout LogoutR GET
+/usuario            UsuarioR        POST GET
+/usuario/#UserId    OneUsuarioR     GET
 
-/usuario UsuarioR POST GET
-
-/usuario/#UserId OneUsuarioR GET
+/materia            MateriaR        GET
 
 /tag TagR GET
