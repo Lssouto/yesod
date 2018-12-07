@@ -9,6 +9,6 @@
 /usuario            UsuarioR        POST GET
 /usuario/#UserId    OneUsuarioR     GET
 
-/materia            MateriaR        GET
+/materia            MateriaR        POST GET
 
 /tag TagR GET

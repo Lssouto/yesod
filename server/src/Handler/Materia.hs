@@ -18,10 +18,15 @@ getMateriaR = do
                                  , "status" .= True 
                                  ])
                                  
-
---postUsuarioR :: Handler TypedContent
---postUsuarioR = do
---    usuario <- requireJsonBody :: Handler User
---    runDB $ insert usuario
---    sendStatusJSON ok200 (object ["resp" .= usuario])
+postMateriaR :: Handler TypedContent
+postMateriaR = do
+    materia <- requireJsonBody :: Handler Materia
+    runDB $ insert materia
+    sendStatusJSON ok200 (object ["status" .= True])
     
+--getOneUsuarioR :: UserId -> Handler TypedContent
+--getOneUsuarioR userId = do
+--    usuario <- runDB $ get404 userId :: Handler User
+--    sendStatusJSON ok200 (object [ "data" .= usuario
+--                                 , "status" .= True
+--                                 ])
