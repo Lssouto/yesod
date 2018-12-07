@@ -10,5 +10,6 @@
 /usuario/#UserId    OneUsuarioR     GET
 
 /materia            MateriaR        POST GET
+/materia/#MateriaId OneMateriaR     GET
 
 /tag TagR GET

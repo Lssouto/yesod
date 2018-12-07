@@ -24,9 +24,9 @@ postMateriaR = do
     runDB $ insert materia
     sendStatusJSON ok200 (object ["status" .= True])
     
---getOneUsuarioR :: UserId -> Handler TypedContent
---getOneUsuarioR userId = do
---    usuario <- runDB $ get404 userId :: Handler User
---    sendStatusJSON ok200 (object [ "data" .= usuario
---                                 , "status" .= True
---                                 ])
+getOneMateriaR :: MateriaId -> Handler TypedContent
+getOneMateriaR materiaId = do
+    materia <- runDB $ get404 materiaId :: Handler Materia
+    sendStatusJSON ok200 (object [ "data" .= materia
+                                 , "status" .= True
+                                 ])
