@@ -12,4 +12,5 @@
 /materia            MateriaR        POST GET
 /materia/#MateriaId OneMateriaR     GET
 
-/tag TagR GET
+/tag TagR                           GET
+/tag/#MateriaId     TagInMateriaR   GET
