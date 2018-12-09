@@ -27,3 +27,10 @@ getTagInMateriaR materiaId = do
     sendStatusJSON ok200 (object [ "data" .= tag
                                  , "status" .= True
                                  ])
+
+getOneTagR :: TagId -> Handler TypedContent
+getOneTagR tagId = do
+    tag <- runDB $ get404 tagId :: Handler Tag
+    sendStatusJSON ok200 (object [ "data" .= tag
+                                 , "status" .= True
+                                 ])
