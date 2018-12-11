@@ -10,3 +10,8 @@ Tag json
      nome           Text
      idMateria      MateriaId
      
+Balance json 
+     idUser         UserId
+     idMateria      MateriaId
+     notaMinima     Double
+     descricao      Text
