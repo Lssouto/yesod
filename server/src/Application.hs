@@ -43,7 +43,7 @@ import Handler.Home
 
 --TABELAS AQUI!
 
-import Handler.Auth
+import Handler.Authenticate
 import Handler.Usuario
 import Handler.Tag
 import Handler.Materia

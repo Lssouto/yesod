@@ -3,8 +3,8 @@
 /favicon.ico FaviconR GET
 /robots.txt RobotsR GET
 
-/auth               AuthR           POST
-/auth/logout        LogoutR         GET
+/auth               AuthenticateR   POST
+/auth/logout        BackLogoutR     GET
 
 /usuario            UsuarioR        POST GET
 /usuario/#UserId    OneUsuarioR     GET
@@ -16,5 +16,4 @@
 /tagOne/#TagId      OneTagR         GET
 /tag/#MateriaId     TagInMateriaR   GET
 
-/balance            BalanceR        GET POST
-/balance/#BalanceId PbalanceR       PUT GET DELETE
+/balance            BalanceR        GET 
