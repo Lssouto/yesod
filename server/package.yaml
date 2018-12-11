@@ -46,6 +46,7 @@ dependencies:
 - case-insensitive
 - wai
 - wai-cors
+- jwt
 #adicionado aqui
 - http-types
 # The library contains all of our application code. The executable
