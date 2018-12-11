@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: a1f3a980da0eee1df7ea68249ac8e285734215606a304b2c36bdaf73a6f10533
+-- hash: d8aa3d9d0a0dd388a2d7107e8f3d54bc522eb24c63174220451f122ad44adb8b
 
 name:           aulahaskell
 version:        0.0.0
@@ -24,7 +24,8 @@ library
   exposed-modules:
       Application
       Foundation
-      Handler.Auth
+      Handler.Authenticate
+      Handler.Balance
       Handler.Common
       Handler.Home
       Handler.Materia
@@ -57,6 +58,7 @@ library
     , hjsmin >=0.1 && <0.3
     , http-conduit >=2.1 && <2.3
     , http-types
+    , jwt
     , monad-control >=0.3 && <1.1
     , monad-logger >=0.3 && <0.4
     , persistent >=2.0 && <2.8
@@ -113,6 +115,7 @@ executable aulahaskell
     , hjsmin >=0.1 && <0.3
     , http-conduit >=2.1 && <2.3
     , http-types
+    , jwt
     , monad-control >=0.3 && <1.1
     , monad-logger >=0.3 && <0.4
     , persistent >=2.0 && <2.8
