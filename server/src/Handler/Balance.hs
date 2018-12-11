@@ -10,9 +10,6 @@ import Network.HTTP.Types.Status
 import Database.Persist.Postgresql
 import Prelude (read)
 
-getHomeR :: Handler Html
-getHomeR = undefined
-
 getBalanceR :: Handler TypedContent
 getBalanceR = do
     usrid <- maybeAuthId
