@@ -54,9 +54,8 @@ import AuthService from '@/services/Authentication'
             this.$swal({
               type: 'error',
               title: 'Ops ...',
-              text: 'Ocorreu um erro ao deslogal. Tente novamente mais tarde'
+              text: 'Ocorreu um erro ao deslogar. Tente novamente mais tarde'
             })
-            return
           }
           this.$store.dispatch('setPasswordValidState', false)
           this.$store.dispatch('setToken', null)

@@ -15,3 +15,15 @@ Balance json
      idMateria      MateriaId
      notaMinima     Double
      descricao      Text
+     
+     
+Evento json
+     titulo         Text
+     descricao      Text
+     idMateria      MateriaId
+     idUser         UserId
+     dtEvento       Text
+     type           Text
+     tags           Text
+     linkVideo      Text Maybe
+     anotacao       Text Maybe
