@@ -21,4 +21,12 @@ getBalanceR = do
                                                  ])
         _ -> sendStatusJSON ok200 (object ["status" .= False])
     
- 
+postBalanceR :: Handler TypedContent
+postBalanceR = do
+    balance <- requireJsonBody :: Handler Balance
+    usrid <- maybeAuthId
+    case usrid of
+        Just uid -> do 
+                    runDB . insert $ balance { balanceIdUser = uid }
+                    sendStatusJSON ok200 (object ["status" .= True])
+        _ -> sendStatusJSON ok200 (object ["status" .= False])

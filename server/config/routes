@@ -16,4 +16,4 @@
 /tagOne/#TagId      OneTagR         GET
 /tag/#MateriaId     TagInMateriaR   GET
 
-/balance            BalanceR        GET 
+/balance            BalanceR        GET POST

@@ -7,13 +7,6 @@
 module Handler.Tag where
 
 import Import
-
--- postUsuarioR :: Handler TypedContent
--- postUsuarioR = do
---     usuario <- requireJsonBody :: Handler User
---     runDB $ insert usuario
---     sendStatusJSON ok200 (object ["resp" .= usuario])
-    
     
 getTagR :: Handler TypedContent
 getTagR = do
