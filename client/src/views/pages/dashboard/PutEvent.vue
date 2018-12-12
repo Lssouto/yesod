@@ -152,6 +152,21 @@ export default {
                 ev: this.evento
             })
         },
+        remover() {
+            this.$swal({
+                type:'warning',
+                title: '<h2>Evento será excluido</h2>',
+                confirmButtonText:
+                'Remover',
+                showCancelButton: true,
+                cancelButtonText: 
+                'Cancelar'
+            }).then(result =>{
+                if(result.value){
+                    this.deleteEvent();
+                }
+            })
+        },
         async deleteEvent(){
             const response = (await EventServ.del(this.evento.id))
             if (response.status) {

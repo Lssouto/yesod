@@ -54,3 +54,12 @@ getPeventoR evntId = do
                                                  , "status" .= True 
                                                  ])
         _ -> sendStatusJSON ok200 (object ["status" .= False])
+        
+deletePeventoR :: EventoId -> Handler TypedContent
+deletePeventoR evntId = do 
+    usrid <- maybeAuthId
+    case usrid of
+        Just uid -> do 
+                    runDB $ delete evntId
+                    sendStatusJSON ok200 (object [  "status" .= True ])
+        _ -> sendStatusJSON ok200 (object ["status" .= False])
