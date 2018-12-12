@@ -17,3 +17,4 @@
 /tag/#MateriaId     TagInMateriaR   GET
 
 /balance            BalanceR        GET POST
+/balance/#BalanceId PbalanceR       PUT
