@@ -5,15 +5,15 @@
             <form v-on:submit.prevent="contato()">
                 <div class="input-container">
                     <label class="input-container">Nome</label>
-                    <input type="text" name="" class="form-control" />
+                    <input type="text" name="" class="form-control" v-model="info.name"/>
                 </div>
                 <div class="input-container">
                     <label class="input-container">Assunto</label>
-                    <input type="text" name="" class="form-control" />
+                    <input type="text" name="" class="form-control" v-model="info.assunto"/>
                 </div>
                 <div class="input-container">
                     <label class="input-container">Mensagem</label>
-                    <textarea name="" class="form-control"> </textarea>
+                    <textarea name="" class="form-control" v-model="info.mensagem"> </textarea>
                 </div>
                 <input type="submit" value="Submit" class="btn bg-primary"/>
             </form>
@@ -22,13 +22,30 @@
 </template>
 
 <script>
-
-
+import FaqService from '@/services/Faq.js';
 export default {
     name: "Contato",
+    data(){
+        return { 
+            info: {
+                name: "",
+                assunto:"",
+                mensagem: ""
+            }  
+        }
+    },
     methods: {
-        contato(){
-            
+        async contato(){
+            const response = await FaqService.post(this.info);
+            if (response.status){
+                this.$swal({
+                    type:'success',
+                    title: '<h2>Email Enviado</h2>',
+                    confirmButtonText: 'Finalizar'
+                })
+            } else {
+                console.error(response)
+            }
         }
     }
 }
