@@ -11,5 +11,8 @@ export default {
     },
     put(balance){
         return Api.put(Url, balance, isPartialLoader)
+    },
+    del(id){
+        return Api.del(Url, id, isPartialLoader)
     }
 }

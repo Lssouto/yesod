@@ -45,6 +45,7 @@ instance Yesod App where
 
     isAuthorized AuthenticateR _ = return Authorized
     isAuthorized FaqR  _ = return Authorized
+    isAuthorized postUsuarioR _ = return Authorized
     isAuthorized _     _ =  maybeAuthId >>= return . \case
         Nothing -> Unauthorized "Precisa logar"
         _       -> Authorized

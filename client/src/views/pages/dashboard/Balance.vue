@@ -7,9 +7,14 @@
         </div>
         <div class="balance">
             <div class="balance-list">
-                <div class="balance-item" v-for="item in list" :key="item.materia.id">
-                    <div class="balance-item-title">
-                        {{item.materia.nome | firstUpper}}
+                <div class="balance-item" v-for="(item, index) in list" :key="item.materia.id">
+                    <div class="balance-action-title" @mouseover="toggleRemoveBtn('show', index)" @mouseleave="toggleRemoveBtn('hide', index)">
+                        <div @click="showRemoveModal(item.id)" class="btn bg-dark-secundary btn-remove">
+                            Remover
+                        </div>
+                        <div class="balance-item-title" >
+                            {{ item.materia.nome | firstUpper}}
+                        </div>
                     </div>
                     <balance-nota :min="models.media" :materia="item"></balance-nota>
                 </div>
@@ -53,9 +58,8 @@ export default {
         }
     },
     mounted(){
-        this.getBalance();
         this.getMaterias();
-        
+        this.getBalance();
     },
     methods:{
         
@@ -69,9 +73,10 @@ export default {
                 return ;
 
             let response = (await BalanceServ.post({
-                materia: this.models.materia,
-                notas: [],
-                notaMinima: this.models.media
+                idMateria: this.models.materia.id,
+                descricao: JSON.stringify([]),
+                notaMinima: this.models.media,
+                idUser: 0
             }));
 
             if(response.status){
@@ -98,12 +103,39 @@ export default {
                             materia: this.materias.find(mat=>{
                                 return mat.id == d.idMateria;
                             }),
-                            notas: d.notas,
+                            notas: JSON.parse(d.descricao),
                             notaMinima: d.notaMinima
                         })    
                     })
             } else{
                 console.log('Não foi possível carregar')
+            }
+        },
+        showRemoveModal(id){
+            this.$swal({
+                type:'info',
+                title: '<h2>Remover Balance?</h2>',
+                confirmButtonText:
+                'Remover',
+                showCancelButton: true,
+                cancelButtonText: 
+                'Cancelar'
+            }).then( async result =>{
+                if(result.value){
+                    let res = await BalanceServ.del(id)
+                    this.getBalance();
+                } 
+            })
+        },
+        toggleRemoveBtn(status, index){
+            index++;
+            const el = document.querySelector('.balance-list .balance-item:nth-child('+index+') > .balance-action-title > .btn-remove');
+            if(!el)
+                return
+            if (status == 'show') {
+                el.classList.add('btn-remove-show');
+            } else {
+                el.classList.remove('btn-remove-show');
             }
         }
     },
@@ -123,14 +155,19 @@ export default {
             @extend .shadowbox;
             border-radius: 6px;
         }
+        
         &-item{
+            
             @include flex-align(0 1 auto);
             border-bottom: 2px solid $black;
             background-color: $white;
+            
             &-title{
                 padding: 8px 12px;
                 background-color: $orange;
                 color: $white;
+                text-align: center;
+                width: 100%;
             }
             .nota-add{
                 border-radius: 50%;
@@ -141,6 +178,34 @@ export default {
                 margin-top: 4px;
                 margin-left: 5px;
                 text-align: center;
+            }
+            .balance-action-title{
+                position: relative;
+                overflow-x: hidden;
+                @include flex-align(1 1 auto);
+                @include media($sm,'min'){
+                    flex: 1 1 20%;
+                }
+                .btn-remove{
+                    position: absolute;
+                    top: 0;
+                    left: -100%;
+                    transform: translate3d(0,0,0);
+                    cursor: pointer;
+                    z-index: 10;
+                    margin: 0;
+                    border-radius: 0px;
+                    box-shadow: none;
+                    width: 100%;
+                    padding-left: 0;
+                    padding-right: 0;
+                    min-height: 44px;
+                    @include animation-spd(.25s);
+                    &-show{
+                        @include animation-spd(.35s);
+                        transform: translate3d(100%,0,0);
+                    }
+                }
             }
         }
         &-add{

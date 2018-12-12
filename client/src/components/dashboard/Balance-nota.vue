@@ -147,6 +147,9 @@ export default {
         },
         async putNota(){
             console.log('Materia',this.materia);
+            this.materia.idUser = 0;
+            this.materia.idMateria = this.materia.materia.id;
+            this.materia.descricao = JSON.stringify(this.materia.notas);
             let response = (await BalanceServ.put(this.materia));
             
             if(response.status){
