@@ -22,4 +22,4 @@ getOneUsuarioR userId = do
 getUsuarioR :: Handler TypedContent
 getUsuarioR = do
     usuario <- runDB $ selectList [] [Asc UserEmail]
-    sendStatusJSON ok200 (object ["listinha" .= usuario])
+    sendStatusJSON ok200 (object ["data" .= usuario])
