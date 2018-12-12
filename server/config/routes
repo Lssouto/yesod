@@ -10,6 +10,7 @@
 /usuario/#UserId    OneUsuarioR     GET
 
 /evento             EventoR         GET POST
+/evento/#EventoId   PeventoR        PUT GET
 
 /materia            MateriaR        POST GET
 /materia/#MateriaId OneMateriaR     GET
