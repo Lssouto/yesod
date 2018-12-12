@@ -4,7 +4,7 @@ const isPartialLoader = false;
 
 export default {
     changePassword(user){
-        return Api.post(Url + '/changePassword', user, isPartialLoader );
+        return Api.post('/changePassword', user, isPartialLoader );
     },
     create(user){
         return Api.post(Url + '/', user, isPartialLoader)

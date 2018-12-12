@@ -9,6 +9,8 @@
 /usuario            UsuarioR        POST GET
 /usuario/#UserId    OneUsuarioR     GET
 
+/changePassword     ChangePasswordR POST
+
 /evento             EventoR         GET POST
 /evento/#EventoId   PeventoR        PUT GET DELETE
 
