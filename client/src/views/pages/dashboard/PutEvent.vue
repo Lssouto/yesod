@@ -87,9 +87,10 @@ export default {
         // if(event)    
         //     this.evento = this.$parent.event
         // else
-            this.getEvent();
-        
         this.materias = (await MateriaServ.get()).data;
+        this.getEvent();
+        
+        
     },
     methods: {
         putSelectedTags(selectedItems){
@@ -101,14 +102,22 @@ export default {
             if(this.idEvent)
                 response = (await EventServ.getOne(this.idEvent))
             
-            if(response.status)
+            if(response.status){
                 this.evento = response.data
+                this.evento.tags = JSON.parse(this.evento.tags)
+                this.evento.materia = this.materias.find( mat => {
+                    return mat.id == this.evento.idMateria;
+                })
+                console.log(this.evento)
+            }
         },
         async putEvent(){
             this.evento.tags = this.selectedTags;
             const event = this.evento;
             
             const isValid = Object.keys(event).every(item=>{
+                if(item == "anotacao" || item == "linkVideo") 
+                    return true;
                 return !!event[item];
             })
             
@@ -117,6 +126,8 @@ export default {
                 return;
             }
             
+            event.idMateria = event.materia.id;
+            event.tags = JSON.stringify(event.tags);
             let response = await EventServ.put(event);
             
             console.log(response)
@@ -134,6 +145,12 @@ export default {
                 this.error(response.message);
             }
         },
+        error(msg){
+            console.log('msg' , {
+                msg: msg,
+                ev: this.evento
+            })
+        }
     },
     props: [
         'idEvent'
