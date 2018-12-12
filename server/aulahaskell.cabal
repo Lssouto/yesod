@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 63f7f3d42a31fe16e49d25fb623fc1eaff68f8164ac73c8f178d362be4526abb
+-- hash: 52b5a5a13138319776130e8ed972b6429cc250027549fcbec331cfffb7c184df
 
 name:           aulahaskell
 version:        0.0.0
@@ -28,6 +28,7 @@ library
       Handler.Balance
       Handler.Common
       Handler.Evento
+      Handler.Faq
       Handler.Home
       Handler.Materia
       Handler.Tag
@@ -60,6 +61,7 @@ library
     , http-conduit >=2.1 && <2.3
     , http-types
     , jwt
+    , mime-mail
     , monad-control >=0.3 && <1.1
     , monad-logger >=0.3 && <0.4
     , persistent >=2.0 && <2.8
@@ -117,6 +119,7 @@ executable aulahaskell
     , http-conduit >=2.1 && <2.3
     , http-types
     , jwt
+    , mime-mail
     , monad-control >=0.3 && <1.1
     , monad-logger >=0.3 && <0.4
     , persistent >=2.0 && <2.8

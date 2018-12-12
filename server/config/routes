@@ -21,3 +21,5 @@
 
 /balance            BalanceR        GET POST
 /balance/#BalanceId PbalanceR       PUT GET DELETE 
+
+/faq                FaqR            POST

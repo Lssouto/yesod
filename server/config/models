@@ -27,3 +27,8 @@ Evento json
      tags           Text
      linkVideo      Text Maybe
      anotacao       Text Maybe
+     
+Faq json
+     name           Text 
+     assunto        Text
+     mensagem       Text     
