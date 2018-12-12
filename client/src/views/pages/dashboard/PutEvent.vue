@@ -43,7 +43,8 @@
                     <div class="input-container">
                         <dual-list-box :initialList="tags" :selectedItemsList="evento.dsAssunto" @selectedItems="putSelectedTags"/>
                     </div>
-                    <div class="text-center">
+                    <div class="actions">
+                        <input type="button" value="Remover" class="btn bg-error" @click="remover"/>
                         <input type="submit" value="Salvar" class="btn bg-primary"/>
                     </div>
                 </form>
@@ -150,6 +151,18 @@ export default {
                 msg: msg,
                 ev: this.evento
             })
+        },
+        async deleteEvent(){
+            const response = (await EventServ.del(this.evento.id))
+            if (response.status) {
+                this.$swal({
+                    type:'success',
+                    title: '<h2>Evento Alterado</h2>',
+                })
+                this.$router.push({
+                    name: 'Events'
+                })
+            }
         }
     },
     props: [
@@ -212,6 +225,11 @@ export default {
             text-align: left !important;
             margin-right: 30px;
         }
+    }
+    .actions {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
     }
 }
 </style>

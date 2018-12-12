@@ -14,5 +14,8 @@ export default {
     },
     put(event){
         return Api.put(Url, event, isPartialLoader)
+    },
+    del(id) {
+        return Api.del(Url, id, isPartialLoader ) 
     }
 }
