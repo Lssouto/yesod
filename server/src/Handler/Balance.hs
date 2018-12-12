@@ -42,3 +42,15 @@ putPbalanceR blncId = do
                     runDB $ replace blncId balance { balanceIdUser = uid } 
                     sendStatusJSON ok200 (object ["status" .= True])
         _ -> sendStatusJSON ok200 (object ["status" .= False])
+        
+        
+getPbalanceR :: BalanceId -> Handler TypedContent
+getPbalanceR blncId = do 
+    usrid <- maybeAuthId
+    case usrid of
+        Just uid -> do 
+                    balance <- runDB $ selectFirst [ BalanceId ==. blncId ] []
+                    sendStatusJSON ok200 (object [ "data" .= balance
+                                                 , "status" .= True 
+                                                 ])
+        _ -> sendStatusJSON ok200 (object ["status" .= False])
