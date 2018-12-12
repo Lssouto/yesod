@@ -9,6 +9,8 @@
 /usuario            UsuarioR        POST GET
 /usuario/#UserId    OneUsuarioR     GET
 
+/evento             EventoR         GET POST
+
 /materia            MateriaR        POST GET
 /materia/#MateriaId OneMateriaR     GET
 
