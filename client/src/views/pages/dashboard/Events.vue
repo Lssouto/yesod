@@ -91,10 +91,16 @@ export default {
         async getEvents(){
             let response = (await EventServ.get()).data;
             console.log(response);
-            this.eventsData = response;
+            if(!response.length)
+                return;
+                
+            response.forEach( res => {
+                this.eventsData[res.dtEvento.split('-')[1]-1].data.push(res);
+            })
+            
             for(let i = 0; i < this.eventsData.length; i++){
-                if(response[i].data.length){
-                    this.eventDay = response[i].data;
+                if(this.eventsData[i].data.length){
+                    this.eventDay = this.eventsData[i].data;
                     this.eventsData[i]['active'] = true;
                     break;
                 }

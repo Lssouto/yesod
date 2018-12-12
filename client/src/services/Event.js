@@ -1,5 +1,5 @@
 import Api from './Api';
-const Url = '/event';
+const Url = '/evento';
 const isPartialLoader = false;
 
 export default {

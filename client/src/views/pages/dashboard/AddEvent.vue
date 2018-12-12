@@ -98,6 +98,10 @@ export default{
                 return;
             }
             
+            event.idMateria = event.materia.id;
+            event.tags = JSON.stringify(event.tags);
+            event.idUser = 0;
+            
             let response = await EventService.post(event);
             
             console.log(response)

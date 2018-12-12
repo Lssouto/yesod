@@ -15,7 +15,7 @@
                 <!--    {{day.idMateria}}-->
                 <!--</div>-->
                 <ul class="tags-list">
-                    <li v-for="tag in day.dsAssunto" :key="tag.id">
+                    <li v-for="tag in JSON.parse(day.tags)" :key="tag.id">
                         <input type="checkbox" disabled> {{tag.nome | firstUpper}}
                     </li>
                 </ul>
@@ -108,10 +108,8 @@ export default {
     }
     .btn-learning{
         position: absolute;
-        top: 85px;
+        bottom: 15px;
         right: 25px;
-        /*font-size: 12px;*/
-        /*font-size: 16px;*/
     }
 }
 
