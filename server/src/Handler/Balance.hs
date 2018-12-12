@@ -54,3 +54,12 @@ getPbalanceR blncId = do
                                                  , "status" .= True 
                                                  ])
         _ -> sendStatusJSON ok200 (object ["status" .= False])
+        
+deletePbalanceR :: BalanceId -> Handler TypedContent
+deletePbalanceR blncId = do 
+    usrid <- maybeAuthId
+    case usrid of
+        Just uid -> do 
+                    runDB $ delete blncId
+                    sendStatusJSON ok200 (object [  "status" .= True ])
+        _ -> sendStatusJSON ok200 (object ["status" .= False])
